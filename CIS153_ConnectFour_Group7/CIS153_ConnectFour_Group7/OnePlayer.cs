@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace CIS153_ConnectFour_Group7
 {
-    public partial class form_TitleScreen : Form
+    public partial class OnePlayer : Form
     {
-        public form_TitleScreen()
+        public OnePlayer()
         {
             InitializeComponent();
         }

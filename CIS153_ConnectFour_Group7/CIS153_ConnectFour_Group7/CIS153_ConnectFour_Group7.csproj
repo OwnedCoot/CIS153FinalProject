@@ -46,14 +46,43 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Board.cs" />
+    <Compile Include="Cell.cs" />
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
+    <Compile Include="GameReview.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GameReview.Designer.cs">
+      <DependentUpon>GameReview.cs</DependentUpon>
+    </Compile>
+    <Compile Include="OnePlayer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OnePlayer.Designer.cs">
+      <DependentUpon>OnePlayer.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Statistics.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Statistics.Designer.cs">
+      <DependentUpon>Statistics.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TwoPlayer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TwoPlayer.Designer.cs">
+      <DependentUpon>TwoPlayer.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
