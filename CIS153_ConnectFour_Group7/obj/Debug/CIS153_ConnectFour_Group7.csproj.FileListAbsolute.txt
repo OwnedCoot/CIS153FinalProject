@@ -1,0 +1,6 @@
+C:\Users\pouty\Downloads\CIS153FinalProject-main\CIS153FinalProject-main\CIS153_ConnectFour_Group7\CIS153_ConnectFour_Group7\obj\Debug\CIS153_ConnectFour_Group7.csproj.AssemblyReference.cache
+C:\Users\pouty\Downloads\CIS153FinalProject-main\CIS153FinalProject-main\CIS153_ConnectFour_Group7\CIS153_ConnectFour_Group7\obj\Debug\CIS153_ConnectFour_Group7.form_TitleScreen.resources
+C:\Users\pouty\Downloads\CIS153FinalProject-main\CIS153FinalProject-main\CIS153_ConnectFour_Group7\CIS153_ConnectFour_Group7\obj\Debug\CIS153_ConnectFour_Group7.Properties.Resources.resources
+C:\Users\pouty\Downloads\CIS153FinalProject-main\CIS153FinalProject-main\CIS153_ConnectFour_Group7\CIS153_ConnectFour_Group7\obj\Debug\CIS153_ConnectFour_Group7.TwoPlayer.resources
+C:\Users\pouty\Downloads\CIS153FinalProject-main\CIS153FinalProject-main\CIS153_ConnectFour_Group7\CIS153_ConnectFour_Group7\obj\Debug\CIS153_ConnectFour_Group7.csproj.GenerateResource.cache
+C:\Users\pouty\Downloads\CIS153FinalProject-main\CIS153FinalProject-main\CIS153_ConnectFour_Group7\CIS153_ConnectFour_Group7\obj\Debug\CIS153_ConnectFour_Group7.csproj.CoreCompileInputs.cache
