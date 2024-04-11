@@ -8,8 +8,8 @@ namespace CIS153_ConnectFour_Group7
 {
     internal class Board
     {
-        private int rows;
-        private int columns;
+        private const int rows = 6;
+        private const int columns = 7;
 
         // Creates a 2D array of Cells in the format [row, column]
         private Cell[,] board;
@@ -36,24 +36,29 @@ namespace CIS153_ConnectFour_Group7
         // ========================================================================
         //                                  Setters
         // ========================================================================
-        public void SetRows(int r)
-        {
-            rows = r;
-        }
+        
+        //Commented these out as rows and columns are constant and will not need to be changed.
 
-        public void SetColumns(int c)
-        {
-            columns = c;
-        }
+        //public void SetRows(int r)
+        //{
+        //    rows = r;
+        //}
+
+        //public void SetColumns(int c)
+        //{
+        //    columns = c;
+        //}
 
         // ========================================================================
         //                                  Methods
         // ========================================================================
         // Constructor
-        public Board(int r, int c)
+        public Board()
         {
-            rows = r;
-            columns = c;
+            //Turned this into a default constructor as we don't need to set rows and columns.
+            // v v v deleted these v v v
+            //rows = r;
+            //columns = c;
 
             // Initialize the board with empty cells
             board = new Cell[rows, columns];

@@ -60,5 +60,10 @@ namespace CIS153_ConnectFour_Group7
             column = c;
             player = p;
         }
+
+        public void ChangeColor(int r, int c, int p)
+        {
+
+        }
     }
 }
