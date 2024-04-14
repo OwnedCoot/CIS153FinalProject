@@ -95,8 +95,73 @@ namespace CIS153_ConnectFour_Group7
 
         // Check if a player has won the game
         public bool CheckWin(int player)
-        { 
-            // TODO: Implement win checkin
+        {
+            // Check for a horizontal win
+            for (int x = 0; x < rows; x++)
+            {
+                for (int y = 0; y < columns; y++)
+                {
+                    // Check if there are four cells in a row that are the same player
+                    if (board[x, y].GetPlayer() == player &&
+                        board[x, y + 1].GetPlayer() == player &&
+                        board[x, y + 2].GetPlayer() == player &&
+                        board[x, y + 3].GetPlayer() == player)
+                    {
+                        return true;
+                    }
+                }
+            }
+
+            // Check for a vertical win
+            for (int y = 0; y < columns; y++)
+            {
+                for (int x = 0; x < rows; x++)
+                {
+                    // Check if there are four cells in a row that are the same player
+                    if (board[x, y].GetPlayer() == player &&
+                        board[x + 1, y].GetPlayer() == player &&
+                        board[x + 2, y].GetPlayer() == player &&
+                        board[x + 3, y].GetPlayer() == player)
+                    {
+                        return true;
+                    }
+                }
+            }
+
+            // Check for an ascending diagonal win (/)
+            for (int x = 3; x < rows; x++)
+            {
+                for (int y = 0; y < columns - 3; y++)
+                {
+                    // Check if there are four cells in a row that are the same player
+                    if (board[x, y].GetPlayer() == player &&
+                        board[x - 1, y + 1].GetPlayer() == player &&
+                        board[x - 2, y + 2].GetPlayer() == player &&
+                        board[x - 3, y + 3].GetPlayer() == player)
+                    {
+                        return true;
+                    }
+                }
+            }
+
+            // Check for a descending diagonal win (\)
+            for (int x = 0; x < rows - 3; x++)
+            {
+                for (int y = 0; y < columns - 3; y++)
+                {
+                    // Check if there are four cells in a row that are the same player
+                    if (board[x, y].GetPlayer() == player &&
+                        board[x + 1, y + 1].GetPlayer() == player &&
+                        board[x + 2, y + 2].GetPlayer() == player &&
+                        board[x + 3, y + 3].GetPlayer() == player)
+                    {
+                        return true;
+                    }
+                }
+            }
+
+            // If all of the above checks fail, then no win was found
+            return false;
         }
     }
 }

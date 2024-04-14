@@ -10,3 +10,14 @@ D:\FINAL_PROJECT_CIS153\CIS153FinalProject\CIS153_ConnectFour_Group7\obj\Debug\C
 D:\FINAL_PROJECT_CIS153\CIS153FinalProject\CIS153_ConnectFour_Group7\obj\Debug\CIS153_ConnectFour_Group7.TwoPlayer.resources
 D:\FINAL_PROJECT_CIS153\CIS153FinalProject\CIS153_ConnectFour_Group7\obj\Debug\CIS153_ConnectFour_Group7.csproj.GenerateResource.cache
 D:\FINAL_PROJECT_CIS153\CIS153FinalProject\CIS153_ConnectFour_Group7\obj\Debug\CIS153_ConnectFour_Group7.csproj.CoreCompileInputs.cache
+C:\Users\AstroLightz\Documents\CIS153 Final Project Repo\CIS153FinalProject\CIS153_ConnectFour_Group7\bin\Debug\CIS153_ConnectFour_Group7.exe.config
+C:\Users\AstroLightz\Documents\CIS153 Final Project Repo\CIS153FinalProject\CIS153_ConnectFour_Group7\bin\Debug\CIS153_ConnectFour_Group7.exe
+C:\Users\AstroLightz\Documents\CIS153 Final Project Repo\CIS153FinalProject\CIS153_ConnectFour_Group7\bin\Debug\CIS153_ConnectFour_Group7.pdb
+C:\Users\AstroLightz\Documents\CIS153 Final Project Repo\CIS153FinalProject\CIS153_ConnectFour_Group7\obj\Debug\CIS153_ConnectFour_Group7.csproj.AssemblyReference.cache
+C:\Users\AstroLightz\Documents\CIS153 Final Project Repo\CIS153FinalProject\CIS153_ConnectFour_Group7\obj\Debug\CIS153_ConnectFour_Group7.form_TitleScreen.resources
+C:\Users\AstroLightz\Documents\CIS153 Final Project Repo\CIS153FinalProject\CIS153_ConnectFour_Group7\obj\Debug\CIS153_ConnectFour_Group7.Properties.Resources.resources
+C:\Users\AstroLightz\Documents\CIS153 Final Project Repo\CIS153FinalProject\CIS153_ConnectFour_Group7\obj\Debug\CIS153_ConnectFour_Group7.TwoPlayer.resources
+C:\Users\AstroLightz\Documents\CIS153 Final Project Repo\CIS153FinalProject\CIS153_ConnectFour_Group7\obj\Debug\CIS153_ConnectFour_Group7.csproj.GenerateResource.cache
+C:\Users\AstroLightz\Documents\CIS153 Final Project Repo\CIS153FinalProject\CIS153_ConnectFour_Group7\obj\Debug\CIS153_ConnectFour_Group7.csproj.CoreCompileInputs.cache
+C:\Users\AstroLightz\Documents\CIS153 Final Project Repo\CIS153FinalProject\CIS153_ConnectFour_Group7\obj\Debug\CIS153_ConnectFour_Group7.exe
+C:\Users\AstroLightz\Documents\CIS153 Final Project Repo\CIS153FinalProject\CIS153_ConnectFour_Group7\obj\Debug\CIS153_ConnectFour_Group7.pdb
