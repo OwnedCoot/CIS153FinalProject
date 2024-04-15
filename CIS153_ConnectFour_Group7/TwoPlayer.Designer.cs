@@ -78,13 +78,14 @@
             this.column5 = new System.Windows.Forms.Button();
             this.column6 = new System.Windows.Forms.Button();
             this.column7 = new System.Windows.Forms.Button();
+            this.btn_quit1 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // textBox1
             // 
             this.textBox1.BackColor = System.Drawing.SystemColors.HotTrack;
             this.textBox1.Location = new System.Drawing.Point(1, 24);
-            this.textBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.textBox1.Margin = new System.Windows.Forms.Padding(2);
             this.textBox1.Multiline = true;
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(533, 269);
@@ -94,7 +95,7 @@
             // 
             this.tb_00.BackColor = System.Drawing.SystemColors.Window;
             this.tb_00.Location = new System.Drawing.Point(17, 32);
-            this.tb_00.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tb_00.Margin = new System.Windows.Forms.Padding(2);
             this.tb_00.Multiline = true;
             this.tb_00.Name = "tb_00";
             this.tb_00.Size = new System.Drawing.Size(44, 40);
@@ -103,7 +104,7 @@
             // tb_01
             // 
             this.tb_01.Location = new System.Drawing.Point(90, 32);
-            this.tb_01.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tb_01.Margin = new System.Windows.Forms.Padding(2);
             this.tb_01.Multiline = true;
             this.tb_01.Name = "tb_01";
             this.tb_01.Size = new System.Drawing.Size(44, 40);
@@ -112,7 +113,7 @@
             // tb_05
             // 
             this.tb_05.Location = new System.Drawing.Point(393, 32);
-            this.tb_05.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tb_05.Margin = new System.Windows.Forms.Padding(2);
             this.tb_05.Multiline = true;
             this.tb_05.Name = "tb_05";
             this.tb_05.Size = new System.Drawing.Size(44, 40);
@@ -121,7 +122,7 @@
             // tb_04
             // 
             this.tb_04.Location = new System.Drawing.Point(317, 32);
-            this.tb_04.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tb_04.Margin = new System.Windows.Forms.Padding(2);
             this.tb_04.Multiline = true;
             this.tb_04.Name = "tb_04";
             this.tb_04.Size = new System.Drawing.Size(44, 40);
@@ -130,7 +131,7 @@
             // tb_06
             // 
             this.tb_06.Location = new System.Drawing.Point(473, 32);
-            this.tb_06.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tb_06.Margin = new System.Windows.Forms.Padding(2);
             this.tb_06.Multiline = true;
             this.tb_06.Name = "tb_06";
             this.tb_06.Size = new System.Drawing.Size(44, 40);
@@ -139,7 +140,7 @@
             // tb_02
             // 
             this.tb_02.Location = new System.Drawing.Point(164, 32);
-            this.tb_02.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tb_02.Margin = new System.Windows.Forms.Padding(2);
             this.tb_02.Multiline = true;
             this.tb_02.Name = "tb_02";
             this.tb_02.Size = new System.Drawing.Size(44, 40);
@@ -148,7 +149,7 @@
             // tb_03
             // 
             this.tb_03.Location = new System.Drawing.Point(241, 32);
-            this.tb_03.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tb_03.Margin = new System.Windows.Forms.Padding(2);
             this.tb_03.Multiline = true;
             this.tb_03.Name = "tb_03";
             this.tb_03.Size = new System.Drawing.Size(44, 40);
@@ -157,7 +158,7 @@
             // textBox9
             // 
             this.textBox9.Location = new System.Drawing.Point(17, 75);
-            this.textBox9.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.textBox9.Margin = new System.Windows.Forms.Padding(2);
             this.textBox9.Multiline = true;
             this.textBox9.Name = "textBox9";
             this.textBox9.Size = new System.Drawing.Size(44, 40);
@@ -166,7 +167,7 @@
             // textBox10
             // 
             this.textBox10.Location = new System.Drawing.Point(17, 118);
-            this.textBox10.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.textBox10.Margin = new System.Windows.Forms.Padding(2);
             this.textBox10.Multiline = true;
             this.textBox10.Name = "textBox10";
             this.textBox10.Size = new System.Drawing.Size(44, 40);
@@ -175,7 +176,7 @@
             // textBox11
             // 
             this.textBox11.Location = new System.Drawing.Point(17, 161);
-            this.textBox11.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.textBox11.Margin = new System.Windows.Forms.Padding(2);
             this.textBox11.Multiline = true;
             this.textBox11.Name = "textBox11";
             this.textBox11.Size = new System.Drawing.Size(44, 40);
@@ -184,7 +185,7 @@
             // textBox12
             // 
             this.textBox12.Location = new System.Drawing.Point(17, 204);
-            this.textBox12.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.textBox12.Margin = new System.Windows.Forms.Padding(2);
             this.textBox12.Multiline = true;
             this.textBox12.Name = "textBox12";
             this.textBox12.Size = new System.Drawing.Size(44, 40);
@@ -193,7 +194,7 @@
             // textBox13
             // 
             this.textBox13.Location = new System.Drawing.Point(90, 75);
-            this.textBox13.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.textBox13.Margin = new System.Windows.Forms.Padding(2);
             this.textBox13.Multiline = true;
             this.textBox13.Name = "textBox13";
             this.textBox13.Size = new System.Drawing.Size(44, 40);
@@ -202,7 +203,7 @@
             // textBox14
             // 
             this.textBox14.Location = new System.Drawing.Point(90, 118);
-            this.textBox14.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.textBox14.Margin = new System.Windows.Forms.Padding(2);
             this.textBox14.Multiline = true;
             this.textBox14.Name = "textBox14";
             this.textBox14.Size = new System.Drawing.Size(44, 40);
@@ -211,7 +212,7 @@
             // textBox15
             // 
             this.textBox15.Location = new System.Drawing.Point(90, 161);
-            this.textBox15.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.textBox15.Margin = new System.Windows.Forms.Padding(2);
             this.textBox15.Multiline = true;
             this.textBox15.Name = "textBox15";
             this.textBox15.Size = new System.Drawing.Size(44, 40);
@@ -220,7 +221,7 @@
             // textBox16
             // 
             this.textBox16.Location = new System.Drawing.Point(90, 204);
-            this.textBox16.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.textBox16.Margin = new System.Windows.Forms.Padding(2);
             this.textBox16.Multiline = true;
             this.textBox16.Name = "textBox16";
             this.textBox16.Size = new System.Drawing.Size(44, 40);
@@ -229,7 +230,7 @@
             // textBox17
             // 
             this.textBox17.Location = new System.Drawing.Point(164, 75);
-            this.textBox17.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.textBox17.Margin = new System.Windows.Forms.Padding(2);
             this.textBox17.Multiline = true;
             this.textBox17.Name = "textBox17";
             this.textBox17.Size = new System.Drawing.Size(44, 40);
@@ -238,7 +239,7 @@
             // textBox18
             // 
             this.textBox18.Location = new System.Drawing.Point(164, 118);
-            this.textBox18.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.textBox18.Margin = new System.Windows.Forms.Padding(2);
             this.textBox18.Multiline = true;
             this.textBox18.Name = "textBox18";
             this.textBox18.Size = new System.Drawing.Size(44, 40);
@@ -247,7 +248,7 @@
             // textBox19
             // 
             this.textBox19.Location = new System.Drawing.Point(164, 161);
-            this.textBox19.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.textBox19.Margin = new System.Windows.Forms.Padding(2);
             this.textBox19.Multiline = true;
             this.textBox19.Name = "textBox19";
             this.textBox19.Size = new System.Drawing.Size(44, 40);
@@ -256,7 +257,7 @@
             // textBox20
             // 
             this.textBox20.Location = new System.Drawing.Point(164, 204);
-            this.textBox20.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.textBox20.Margin = new System.Windows.Forms.Padding(2);
             this.textBox20.Multiline = true;
             this.textBox20.Name = "textBox20";
             this.textBox20.Size = new System.Drawing.Size(44, 40);
@@ -265,7 +266,7 @@
             // textBox21
             // 
             this.textBox21.Location = new System.Drawing.Point(241, 75);
-            this.textBox21.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.textBox21.Margin = new System.Windows.Forms.Padding(2);
             this.textBox21.Multiline = true;
             this.textBox21.Name = "textBox21";
             this.textBox21.Size = new System.Drawing.Size(44, 40);
@@ -274,7 +275,7 @@
             // textBox22
             // 
             this.textBox22.Location = new System.Drawing.Point(241, 118);
-            this.textBox22.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.textBox22.Margin = new System.Windows.Forms.Padding(2);
             this.textBox22.Multiline = true;
             this.textBox22.Name = "textBox22";
             this.textBox22.Size = new System.Drawing.Size(44, 40);
@@ -283,7 +284,7 @@
             // textBox23
             // 
             this.textBox23.Location = new System.Drawing.Point(241, 161);
-            this.textBox23.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.textBox23.Margin = new System.Windows.Forms.Padding(2);
             this.textBox23.Multiline = true;
             this.textBox23.Name = "textBox23";
             this.textBox23.Size = new System.Drawing.Size(44, 40);
@@ -292,7 +293,7 @@
             // textBox24
             // 
             this.textBox24.Location = new System.Drawing.Point(241, 204);
-            this.textBox24.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.textBox24.Margin = new System.Windows.Forms.Padding(2);
             this.textBox24.Multiline = true;
             this.textBox24.Name = "textBox24";
             this.textBox24.Size = new System.Drawing.Size(44, 40);
@@ -301,7 +302,7 @@
             // textBox25
             // 
             this.textBox25.Location = new System.Drawing.Point(317, 75);
-            this.textBox25.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.textBox25.Margin = new System.Windows.Forms.Padding(2);
             this.textBox25.Multiline = true;
             this.textBox25.Name = "textBox25";
             this.textBox25.Size = new System.Drawing.Size(44, 40);
@@ -310,7 +311,7 @@
             // textBox26
             // 
             this.textBox26.Location = new System.Drawing.Point(317, 118);
-            this.textBox26.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.textBox26.Margin = new System.Windows.Forms.Padding(2);
             this.textBox26.Multiline = true;
             this.textBox26.Name = "textBox26";
             this.textBox26.Size = new System.Drawing.Size(44, 40);
@@ -319,7 +320,7 @@
             // textBox27
             // 
             this.textBox27.Location = new System.Drawing.Point(317, 161);
-            this.textBox27.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.textBox27.Margin = new System.Windows.Forms.Padding(2);
             this.textBox27.Multiline = true;
             this.textBox27.Name = "textBox27";
             this.textBox27.Size = new System.Drawing.Size(44, 40);
@@ -328,7 +329,7 @@
             // textBox28
             // 
             this.textBox28.Location = new System.Drawing.Point(317, 204);
-            this.textBox28.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.textBox28.Margin = new System.Windows.Forms.Padding(2);
             this.textBox28.Multiline = true;
             this.textBox28.Name = "textBox28";
             this.textBox28.Size = new System.Drawing.Size(44, 40);
@@ -337,7 +338,7 @@
             // textBox29
             // 
             this.textBox29.Location = new System.Drawing.Point(393, 75);
-            this.textBox29.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.textBox29.Margin = new System.Windows.Forms.Padding(2);
             this.textBox29.Multiline = true;
             this.textBox29.Name = "textBox29";
             this.textBox29.Size = new System.Drawing.Size(44, 40);
@@ -346,7 +347,7 @@
             // textBox30
             // 
             this.textBox30.Location = new System.Drawing.Point(393, 118);
-            this.textBox30.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.textBox30.Margin = new System.Windows.Forms.Padding(2);
             this.textBox30.Multiline = true;
             this.textBox30.Name = "textBox30";
             this.textBox30.Size = new System.Drawing.Size(44, 40);
@@ -355,7 +356,7 @@
             // textBox31
             // 
             this.textBox31.Location = new System.Drawing.Point(317, 247);
-            this.textBox31.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.textBox31.Margin = new System.Windows.Forms.Padding(2);
             this.textBox31.Multiline = true;
             this.textBox31.Name = "textBox31";
             this.textBox31.Size = new System.Drawing.Size(44, 40);
@@ -364,7 +365,7 @@
             // textBox32
             // 
             this.textBox32.Location = new System.Drawing.Point(241, 247);
-            this.textBox32.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.textBox32.Margin = new System.Windows.Forms.Padding(2);
             this.textBox32.Multiline = true;
             this.textBox32.Name = "textBox32";
             this.textBox32.Size = new System.Drawing.Size(44, 40);
@@ -373,7 +374,7 @@
             // textBox33
             // 
             this.textBox33.Location = new System.Drawing.Point(164, 247);
-            this.textBox33.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.textBox33.Margin = new System.Windows.Forms.Padding(2);
             this.textBox33.Multiline = true;
             this.textBox33.Name = "textBox33";
             this.textBox33.Size = new System.Drawing.Size(44, 40);
@@ -382,7 +383,7 @@
             // textBox34
             // 
             this.textBox34.Location = new System.Drawing.Point(90, 247);
-            this.textBox34.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.textBox34.Margin = new System.Windows.Forms.Padding(2);
             this.textBox34.Multiline = true;
             this.textBox34.Name = "textBox34";
             this.textBox34.Size = new System.Drawing.Size(44, 40);
@@ -391,7 +392,7 @@
             // textBox35
             // 
             this.textBox35.Location = new System.Drawing.Point(17, 247);
-            this.textBox35.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.textBox35.Margin = new System.Windows.Forms.Padding(2);
             this.textBox35.Multiline = true;
             this.textBox35.Name = "textBox35";
             this.textBox35.Size = new System.Drawing.Size(44, 40);
@@ -400,7 +401,7 @@
             // textBox36
             // 
             this.textBox36.Location = new System.Drawing.Point(393, 161);
-            this.textBox36.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.textBox36.Margin = new System.Windows.Forms.Padding(2);
             this.textBox36.Multiline = true;
             this.textBox36.Name = "textBox36";
             this.textBox36.Size = new System.Drawing.Size(44, 40);
@@ -409,7 +410,7 @@
             // textBox37
             // 
             this.textBox37.Location = new System.Drawing.Point(393, 204);
-            this.textBox37.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.textBox37.Margin = new System.Windows.Forms.Padding(2);
             this.textBox37.Multiline = true;
             this.textBox37.Name = "textBox37";
             this.textBox37.Size = new System.Drawing.Size(44, 40);
@@ -418,7 +419,7 @@
             // textBox38
             // 
             this.textBox38.Location = new System.Drawing.Point(393, 247);
-            this.textBox38.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.textBox38.Margin = new System.Windows.Forms.Padding(2);
             this.textBox38.Multiline = true;
             this.textBox38.Name = "textBox38";
             this.textBox38.Size = new System.Drawing.Size(44, 40);
@@ -427,7 +428,7 @@
             // textBox39
             // 
             this.textBox39.Location = new System.Drawing.Point(473, 75);
-            this.textBox39.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.textBox39.Margin = new System.Windows.Forms.Padding(2);
             this.textBox39.Multiline = true;
             this.textBox39.Name = "textBox39";
             this.textBox39.Size = new System.Drawing.Size(44, 40);
@@ -436,7 +437,7 @@
             // textBox40
             // 
             this.textBox40.Location = new System.Drawing.Point(473, 118);
-            this.textBox40.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.textBox40.Margin = new System.Windows.Forms.Padding(2);
             this.textBox40.Multiline = true;
             this.textBox40.Name = "textBox40";
             this.textBox40.Size = new System.Drawing.Size(44, 40);
@@ -445,7 +446,7 @@
             // textBox41
             // 
             this.textBox41.Location = new System.Drawing.Point(473, 161);
-            this.textBox41.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.textBox41.Margin = new System.Windows.Forms.Padding(2);
             this.textBox41.Multiline = true;
             this.textBox41.Name = "textBox41";
             this.textBox41.Size = new System.Drawing.Size(44, 40);
@@ -454,7 +455,7 @@
             // textBox42
             // 
             this.textBox42.Location = new System.Drawing.Point(473, 204);
-            this.textBox42.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.textBox42.Margin = new System.Windows.Forms.Padding(2);
             this.textBox42.Multiline = true;
             this.textBox42.Name = "textBox42";
             this.textBox42.Size = new System.Drawing.Size(44, 40);
@@ -463,7 +464,7 @@
             // textBox43
             // 
             this.textBox43.Location = new System.Drawing.Point(473, 247);
-            this.textBox43.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.textBox43.Margin = new System.Windows.Forms.Padding(2);
             this.textBox43.Multiline = true;
             this.textBox43.Name = "textBox43";
             this.textBox43.Size = new System.Drawing.Size(44, 40);
@@ -472,7 +473,7 @@
             // column1
             // 
             this.column1.Location = new System.Drawing.Point(8, -1);
-            this.column1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.column1.Margin = new System.Windows.Forms.Padding(2);
             this.column1.Name = "column1";
             this.column1.Size = new System.Drawing.Size(55, 21);
             this.column1.TabIndex = 43;
@@ -482,7 +483,7 @@
             // column2
             // 
             this.column2.Location = new System.Drawing.Point(83, -1);
-            this.column2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.column2.Margin = new System.Windows.Forms.Padding(2);
             this.column2.Name = "column2";
             this.column2.Size = new System.Drawing.Size(55, 21);
             this.column2.TabIndex = 44;
@@ -492,7 +493,7 @@
             // column3
             // 
             this.column3.Location = new System.Drawing.Point(158, -1);
-            this.column3.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.column3.Margin = new System.Windows.Forms.Padding(2);
             this.column3.Name = "column3";
             this.column3.Size = new System.Drawing.Size(55, 21);
             this.column3.TabIndex = 45;
@@ -502,7 +503,7 @@
             // column4
             // 
             this.column4.Location = new System.Drawing.Point(235, -1);
-            this.column4.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.column4.Margin = new System.Windows.Forms.Padding(2);
             this.column4.Name = "column4";
             this.column4.Size = new System.Drawing.Size(55, 21);
             this.column4.TabIndex = 46;
@@ -512,7 +513,7 @@
             // column5
             // 
             this.column5.Location = new System.Drawing.Point(310, -1);
-            this.column5.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.column5.Margin = new System.Windows.Forms.Padding(2);
             this.column5.Name = "column5";
             this.column5.Size = new System.Drawing.Size(55, 21);
             this.column5.TabIndex = 47;
@@ -522,7 +523,7 @@
             // column6
             // 
             this.column6.Location = new System.Drawing.Point(387, -1);
-            this.column6.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.column6.Margin = new System.Windows.Forms.Padding(2);
             this.column6.Name = "column6";
             this.column6.Size = new System.Drawing.Size(55, 21);
             this.column6.TabIndex = 48;
@@ -532,18 +533,31 @@
             // column7
             // 
             this.column7.Location = new System.Drawing.Point(470, -1);
-            this.column7.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.column7.Margin = new System.Windows.Forms.Padding(2);
             this.column7.Name = "column7";
             this.column7.Size = new System.Drawing.Size(55, 21);
             this.column7.TabIndex = 49;
             this.column7.Text = "column 7";
             this.column7.UseVisualStyleBackColor = true;
             // 
+            // btn_quit1
+            // 
+            this.btn_quit1.BackColor = System.Drawing.Color.Red;
+            this.btn_quit1.Font = new System.Drawing.Font("MS Reference Specialty", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_quit1.Location = new System.Drawing.Point(446, 298);
+            this.btn_quit1.Name = "btn_quit1";
+            this.btn_quit1.Size = new System.Drawing.Size(75, 32);
+            this.btn_quit1.TabIndex = 50;
+            this.btn_quit1.Text = "Quit";
+            this.btn_quit1.UseVisualStyleBackColor = false;
+            this.btn_quit1.Click += new System.EventHandler(this.btn_quit1_Click);
+            // 
             // TwoPlayer
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(533, 292);
+            this.ClientSize = new System.Drawing.Size(533, 337);
+            this.Controls.Add(this.btn_quit1);
             this.Controls.Add(this.column7);
             this.Controls.Add(this.column6);
             this.Controls.Add(this.column5);
@@ -594,7 +608,7 @@
             this.Controls.Add(this.tb_01);
             this.Controls.Add(this.tb_00);
             this.Controls.Add(this.textBox1);
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "TwoPlayer";
             this.Text = "TwoPlayer";
             this.ResumeLayout(false);
@@ -654,5 +668,6 @@
         private System.Windows.Forms.Button column5;
         private System.Windows.Forms.Button column6;
         private System.Windows.Forms.Button column7;
+        private System.Windows.Forms.Button btn_quit1;
     }
 }

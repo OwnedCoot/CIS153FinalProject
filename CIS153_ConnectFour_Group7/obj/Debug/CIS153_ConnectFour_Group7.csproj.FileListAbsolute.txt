@@ -21,3 +21,11 @@ C:\Users\AstroLightz\Documents\CIS153 Final Project Repo\CIS153FinalProject\CIS1
 C:\Users\AstroLightz\Documents\CIS153 Final Project Repo\CIS153FinalProject\CIS153_ConnectFour_Group7\obj\Debug\CIS153_ConnectFour_Group7.csproj.CoreCompileInputs.cache
 C:\Users\AstroLightz\Documents\CIS153 Final Project Repo\CIS153FinalProject\CIS153_ConnectFour_Group7\obj\Debug\CIS153_ConnectFour_Group7.exe
 C:\Users\AstroLightz\Documents\CIS153 Final Project Repo\CIS153FinalProject\CIS153_ConnectFour_Group7\obj\Debug\CIS153_ConnectFour_Group7.pdb
+D:\FINAL_PROJECT_CIS153\CIS153FinalProject\CIS153_ConnectFour_Group7\bin\Debug\CIS153_ConnectFour_Group7.exe.config
+D:\FINAL_PROJECT_CIS153\CIS153FinalProject\CIS153_ConnectFour_Group7\bin\Debug\CIS153_ConnectFour_Group7.exe
+D:\FINAL_PROJECT_CIS153\CIS153FinalProject\CIS153_ConnectFour_Group7\bin\Debug\CIS153_ConnectFour_Group7.pdb
+D:\FINAL_PROJECT_CIS153\CIS153FinalProject\CIS153_ConnectFour_Group7\obj\Debug\CIS153_ConnectFour_Group7.exe
+D:\FINAL_PROJECT_CIS153\CIS153FinalProject\CIS153_ConnectFour_Group7\obj\Debug\CIS153_ConnectFour_Group7.pdb
+D:\FINAL_PROJECT_CIS153\CIS153FinalProject\CIS153_ConnectFour_Group7\obj\Debug\CIS153_ConnectFour_Group7.GameReview.resources
+D:\FINAL_PROJECT_CIS153\CIS153FinalProject\CIS153_ConnectFour_Group7\obj\Debug\CIS153_ConnectFour_Group7.OnePlayer.resources
+D:\FINAL_PROJECT_CIS153\CIS153FinalProject\CIS153_ConnectFour_Group7\obj\Debug\CIS153_ConnectFour_Group7.Statistics.resources

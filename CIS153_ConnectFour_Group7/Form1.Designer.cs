@@ -58,6 +58,7 @@
             this.btn_title_OnePlayer.TabIndex = 1;
             this.btn_title_OnePlayer.Text = "One Player";
             this.btn_title_OnePlayer.UseVisualStyleBackColor = false;
+            this.btn_title_OnePlayer.Click += new System.EventHandler(this.btn_title_OnePlayer_Click);
             // 
             // btn_title_TwoPlayer
             // 
@@ -70,6 +71,7 @@
             this.btn_title_TwoPlayer.TabIndex = 1;
             this.btn_title_TwoPlayer.Text = "Two Player";
             this.btn_title_TwoPlayer.UseVisualStyleBackColor = false;
+            this.btn_title_TwoPlayer.Click += new System.EventHandler(this.btn_title_TwoPlayer_Click);
             // 
             // btn_title_Statistics
             // 
@@ -82,6 +84,7 @@
             this.btn_title_Statistics.TabIndex = 1;
             this.btn_title_Statistics.Text = "Statistics";
             this.btn_title_Statistics.UseVisualStyleBackColor = false;
+            this.btn_title_Statistics.Click += new System.EventHandler(this.btn_title_Statistics_Click);
             // 
             // btn_title_Quit
             // 
@@ -95,6 +98,7 @@
             this.btn_title_Quit.TabIndex = 1;
             this.btn_title_Quit.Text = "Quit Game";
             this.btn_title_Quit.UseVisualStyleBackColor = false;
+            this.btn_title_Quit.Click += new System.EventHandler(this.btn_title_Quit_Click);
             // 
             // lbl_title_Credits
             // 

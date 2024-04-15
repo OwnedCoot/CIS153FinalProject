@@ -28,12 +28,35 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
+            this.btn_quit3 = new System.Windows.Forms.Button();
+            this.SuspendLayout();
+            // 
+            // btn_quit3
+            // 
+            this.btn_quit3.BackColor = System.Drawing.Color.Red;
+            this.btn_quit3.Font = new System.Drawing.Font("MS Reference Specialty", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_quit3.Location = new System.Drawing.Point(713, 406);
+            this.btn_quit3.Name = "btn_quit3";
+            this.btn_quit3.Size = new System.Drawing.Size(75, 32);
+            this.btn_quit3.TabIndex = 51;
+            this.btn_quit3.Text = "Quit";
+            this.btn_quit3.UseVisualStyleBackColor = false;
+            this.btn_quit3.Click += new System.EventHandler(this.btn_quit3_Click);
+            // 
+            // OnePlayer
+            // 
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.btn_quit3);
+            this.Name = "OnePlayer";
             this.Text = "OnePlayer";
+            this.ResumeLayout(false);
+
         }
 
         #endregion
+
+        private System.Windows.Forms.Button btn_quit3;
     }
 }
