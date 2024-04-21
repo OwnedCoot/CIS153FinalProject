@@ -60,6 +60,7 @@
     <Compile Include="GameReview.Designer.cs">
       <DependentUpon>GameReview.cs</DependentUpon>
     </Compile>
+    <Compile Include="GameUtilities.cs" />
     <Compile Include="OnePlayer.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -116,6 +117,10 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Moves.txt" />
+    <Content Include="Statistics.txt" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

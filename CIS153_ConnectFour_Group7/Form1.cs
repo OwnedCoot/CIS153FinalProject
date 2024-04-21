@@ -1,4 +1,9 @@
-﻿using System;
+﻿// =======================================================
+// Authors: Andrew O'Brien, Cody Thompson, Drake Termors
+// Date: 04/21/2024
+// Desc: Connect Four Game
+// =======================================================
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -17,6 +22,9 @@ namespace CIS153_ConnectFour_Group7
         public form_TitleScreen()
         {
             InitializeComponent();
+
+            // InitStatistics() is called to ensure the Statistics file is not empty
+            GameUtilities.InitStatistics();
         }
 
         //==========BUTTON CLICKS==========
