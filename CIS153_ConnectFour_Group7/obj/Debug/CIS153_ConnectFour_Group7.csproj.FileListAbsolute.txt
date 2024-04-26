@@ -32,3 +32,17 @@ D:\FINAL_PROJECT_CIS153\CIS153FinalProject\CIS153_ConnectFour_Group7\obj\Debug\C
 C:\Users\AstroLightz\Documents\CIS153 Final Project Repo\CIS153FinalProject\CIS153_ConnectFour_Group7\obj\Debug\CIS153_ConnectFour_Group7.GameReview.resources
 C:\Users\AstroLightz\Documents\CIS153 Final Project Repo\CIS153FinalProject\CIS153_ConnectFour_Group7\obj\Debug\CIS153_ConnectFour_Group7.OnePlayer.resources
 C:\Users\AstroLightz\Documents\CIS153 Final Project Repo\CIS153FinalProject\CIS153_ConnectFour_Group7\obj\Debug\CIS153_ConnectFour_Group7.Statistics.resources
+C:\Users\pouty\Downloads\CIS153FinalProject-main\CIS153FinalProject-main\CIS153_ConnectFour_Group7\bin\Debug\CIS153_ConnectFour_Group7.exe.config
+C:\Users\pouty\Downloads\CIS153FinalProject-main\CIS153FinalProject-main\CIS153_ConnectFour_Group7\bin\Debug\CIS153_ConnectFour_Group7.exe
+C:\Users\pouty\Downloads\CIS153FinalProject-main\CIS153FinalProject-main\CIS153_ConnectFour_Group7\bin\Debug\CIS153_ConnectFour_Group7.pdb
+C:\Users\pouty\Downloads\CIS153FinalProject-main\CIS153FinalProject-main\CIS153_ConnectFour_Group7\obj\Debug\CIS153_ConnectFour_Group7.csproj.AssemblyReference.cache
+C:\Users\pouty\Downloads\CIS153FinalProject-main\CIS153FinalProject-main\CIS153_ConnectFour_Group7\obj\Debug\CIS153_ConnectFour_Group7.form_TitleScreen.resources
+C:\Users\pouty\Downloads\CIS153FinalProject-main\CIS153FinalProject-main\CIS153_ConnectFour_Group7\obj\Debug\CIS153_ConnectFour_Group7.GameReview.resources
+C:\Users\pouty\Downloads\CIS153FinalProject-main\CIS153FinalProject-main\CIS153_ConnectFour_Group7\obj\Debug\CIS153_ConnectFour_Group7.OnePlayer.resources
+C:\Users\pouty\Downloads\CIS153FinalProject-main\CIS153FinalProject-main\CIS153_ConnectFour_Group7\obj\Debug\CIS153_ConnectFour_Group7.Properties.Resources.resources
+C:\Users\pouty\Downloads\CIS153FinalProject-main\CIS153FinalProject-main\CIS153_ConnectFour_Group7\obj\Debug\CIS153_ConnectFour_Group7.Statistics.resources
+C:\Users\pouty\Downloads\CIS153FinalProject-main\CIS153FinalProject-main\CIS153_ConnectFour_Group7\obj\Debug\CIS153_ConnectFour_Group7.TwoPlayer.resources
+C:\Users\pouty\Downloads\CIS153FinalProject-main\CIS153FinalProject-main\CIS153_ConnectFour_Group7\obj\Debug\CIS153_ConnectFour_Group7.csproj.GenerateResource.cache
+C:\Users\pouty\Downloads\CIS153FinalProject-main\CIS153FinalProject-main\CIS153_ConnectFour_Group7\obj\Debug\CIS153_ConnectFour_Group7.csproj.CoreCompileInputs.cache
+C:\Users\pouty\Downloads\CIS153FinalProject-main\CIS153FinalProject-main\CIS153_ConnectFour_Group7\obj\Debug\CIS153_ConnectFour_Group7.exe
+C:\Users\pouty\Downloads\CIS153FinalProject-main\CIS153FinalProject-main\CIS153_ConnectFour_Group7\obj\Debug\CIS153_ConnectFour_Group7.pdb
