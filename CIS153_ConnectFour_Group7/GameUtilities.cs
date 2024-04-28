@@ -101,5 +101,19 @@ namespace CIS153_ConnectFour_Group7
             File.WriteAllLines(fileName, moves);
         }
 
+        // ==================================================================
+        //                          Other Utilities
+        // ==================================================================
+        
+        // Change the current player from 1 to 2 or 2 to 1
+        public static int ChangePlayer(int curPlr)
+        {
+            if (curPlr == 1)
+            {
+                return 2;
+            }
+            
+            return 1;
+        }
     }
 }
