@@ -1,8 +1,12 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Runtime.CompilerServices;
 using System.Text;
 using System.Threading.Tasks;
+
+using System.Windows.Forms;
+using System.Drawing;
 
 namespace CIS153_ConnectFour_Group7
 {
@@ -14,6 +18,7 @@ namespace CIS153_ConnectFour_Group7
         // Creates a 2D array of Cells in the format [row, column]
         private Cell[,] board;
 
+        private TextBox[,] textBoxes;
         // ========================================================================
         //                                  Getters
         // ========================================================================
@@ -36,7 +41,7 @@ namespace CIS153_ConnectFour_Group7
         // ========================================================================
         //                                  Setters
         // ========================================================================
-        
+
         //Commented these out as rows and columns are constant and will not need to be changed.
 
         //public void SetRows(int r)
@@ -53,12 +58,12 @@ namespace CIS153_ConnectFour_Group7
         //                                  Methods
         // ========================================================================
         // Constructor
-        public Board()
+        //I modified the constructor to allow access to the textboxes in the form it is created in.
+        public Board(TextBox[,] tbs)
         {
-            //Turned this into a default constructor as we don't need to set rows and columns.
-            // v v v deleted these v v v
-            //rows = r;
-            //columns = c;
+            //=========================
+            //   2D array of Cells
+            //=========================
 
             // Initialize the board with empty cells
             board = new Cell[rows, columns];
@@ -72,6 +77,10 @@ namespace CIS153_ConnectFour_Group7
                     board[x, y] = new Cell(x, y, 0);
                 }
             }
+
+            textBoxes = tbs;
+            //testing that it changes color
+            //textBoxes[0,5].BackColor = Color.Red;
         }
 
         // Check if the board is full. Used to determine if the game is a draw
@@ -99,7 +108,7 @@ namespace CIS153_ConnectFour_Group7
             // Check for a horizontal win
             for (int x = 0; x < rows; x++)
             {
-                for (int y = 0; y < columns; y++)
+                for (int y = 0; y < columns - 3; y++)
                 {
                     // Check if there are four cells in a row that are the same player
                     if (board[x, y].GetPlayer() == player &&
@@ -118,7 +127,8 @@ namespace CIS153_ConnectFour_Group7
                 for (int x = 0; x < rows; x++)
                 {
                     // Check if there are four cells in a row that are the same player
-                    if (board[x, y].GetPlayer() == player &&
+                    if (x + 3 < rows &&
+                        board[x, y].GetPlayer() == player &&
                         board[x + 1, y].GetPlayer() == player &&
                         board[x + 2, y].GetPlayer() == player &&
                         board[x + 3, y].GetPlayer() == player)
@@ -163,5 +173,22 @@ namespace CIS153_ConnectFour_Group7
             // If all of the above checks fail, then no win was found
             return false;
         }
+
+        public void ChangeColor(int r, int c)
+        {
+            if (board[r,c].GetPlayer() == 1)
+            {
+            textBoxes[r, c].BackColor = Color.Red;
+            }
+            else if (board[r, c].GetPlayer() == 2)
+            {
+            textBoxes[r, c].BackColor = Color.Yellow;
+            }
+            else
+            {
+            Console.WriteLine("ERROR IN COLOR CHANGE");
+            }
+        }
+
     }
 }

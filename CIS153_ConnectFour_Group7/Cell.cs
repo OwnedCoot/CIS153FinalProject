@@ -1,8 +1,10 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows.Forms;
 
 namespace CIS153_ConnectFour_Group7
 {
@@ -59,11 +61,6 @@ namespace CIS153_ConnectFour_Group7
             row = r;
             column = c;
             player = p;
-        }
-
-        public void ChangeColor(int r, int c, int p)
-        {
-
         }
     }
 }

@@ -14,17 +14,18 @@ namespace CIS153_ConnectFour_Group7
     {
         form_TitleScreen pform;
 
-        // Create the game board
-        private Board board = new Board();
+        //TextBox array for Two-Player mode
+        private TextBox[,] twoPlayerTBA = new TextBox[6, 7];
+
+        private Board board;
 
         // Current player
         private int curPlayer = 1;
 
+
+
+
         //==========CONSTRUCTORS==========
-        public TwoPlayer()
-        {
-            InitializeComponent();
-        }
 
         //overloaded constructor
         public TwoPlayer(form_TitleScreen pf)
@@ -32,6 +33,9 @@ namespace CIS153_ConnectFour_Group7
             InitializeComponent();
             //this passes the parent form to this form so we can get back to it.
             pform = pf;
+            InitializeTextBoxes();
+            // Create the game board
+            board = new Board(twoPlayerTBA);
         }
 
         //==========BUTTON CLICKS==========
@@ -79,6 +83,21 @@ namespace CIS153_ConnectFour_Group7
                     board.GetCell(i, c).SetPlayer(curPlayer);
 
                     // -- Code for changing the color of the button overlay goes here (For when we switch to buttons) --
+                    board.ChangeColor(i, c);
+
+                    // change the player ***I think this should be somewhere else but I am putting it
+                    // here for testing purposes***
+
+                    if (curPlayer == 1)
+                    {
+                        //change from P1 to P2
+                        curPlayer = 2;
+                    }
+                    else if (curPlayer == 2)
+                    {
+                        //change from P2 to P1
+                        curPlayer = 1;
+                    }
 
                     break;
                 }
@@ -125,6 +144,71 @@ namespace CIS153_ConnectFour_Group7
 
             // Call the column_Click method with the column number
             column_Click(colNum);
+        }
+
+
+        //========================
+        // 2D array of TextBoxes
+        //========================
+        // Initialize the 2D array of text boxes.
+        // Because the text boxes are pre-placed, I am just going to assign their names to each element
+        // in the 2D array instead of make code that creates new text boxes.
+
+        private void InitializeTextBoxes()
+        {
+            // Row 1
+            twoPlayerTBA[0, 0] = tb_00;
+            twoPlayerTBA[0, 1] = tb_01;
+            twoPlayerTBA[0, 2] = tb_02;
+            twoPlayerTBA[0, 3] = tb_03;
+            twoPlayerTBA[0, 4] = tb_04;
+            twoPlayerTBA[0, 5] = tb_05;
+            twoPlayerTBA[0, 6] = tb_06;
+
+            // Row 2
+            twoPlayerTBA[1, 0] = tb_10;
+            twoPlayerTBA[1, 1] = tb_11;
+            twoPlayerTBA[1, 2] = tb_12;
+            twoPlayerTBA[1, 3] = tb_13;
+            twoPlayerTBA[1, 4] = tb_14;
+            twoPlayerTBA[1, 5] = tb_15;
+            twoPlayerTBA[1, 6] = tb_16;
+
+            // Row 3
+            twoPlayerTBA[2, 0] = tb_20;
+            twoPlayerTBA[2, 1] = tb_21;
+            twoPlayerTBA[2, 2] = tb_22;
+            twoPlayerTBA[2, 3] = tb_23;
+            twoPlayerTBA[2, 4] = tb_24;
+            twoPlayerTBA[2, 5] = tb_25;
+            twoPlayerTBA[2, 6] = tb_26;
+
+            // Row 4
+            twoPlayerTBA[3, 0] = tb_30;
+            twoPlayerTBA[3, 1] = tb_31;
+            twoPlayerTBA[3, 2] = tb_32;
+            twoPlayerTBA[3, 3] = tb_33;
+            twoPlayerTBA[3, 4] = tb_34;
+            twoPlayerTBA[3, 5] = tb_35;
+            twoPlayerTBA[3, 6] = tb_36;
+
+            // Row 5
+            twoPlayerTBA[4, 0] = tb_40;
+            twoPlayerTBA[4, 1] = tb_41;
+            twoPlayerTBA[4, 2] = tb_42;
+            twoPlayerTBA[4, 3] = tb_43;
+            twoPlayerTBA[4, 4] = tb_44;
+            twoPlayerTBA[4, 5] = tb_45;
+            twoPlayerTBA[4, 6] = tb_46;
+
+            // Row 6
+            twoPlayerTBA[5, 0] = tb_50;
+            twoPlayerTBA[5, 1] = tb_51;
+            twoPlayerTBA[5, 2] = tb_52;
+            twoPlayerTBA[5, 3] = tb_53;
+            twoPlayerTBA[5, 4] = tb_54;
+            twoPlayerTBA[5, 5] = tb_55;
+            twoPlayerTBA[5, 6] = tb_56;
         }
 
         //Testing for making transparent

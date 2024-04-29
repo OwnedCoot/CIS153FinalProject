@@ -40,44 +40,44 @@
             this.tb_20 = new System.Windows.Forms.TextBox();
             this.tb_30 = new System.Windows.Forms.TextBox();
             this.tb_40 = new System.Windows.Forms.TextBox();
-            this.textBox13 = new System.Windows.Forms.TextBox();
-            this.textBox14 = new System.Windows.Forms.TextBox();
-            this.textBox15 = new System.Windows.Forms.TextBox();
-            this.textBox16 = new System.Windows.Forms.TextBox();
-            this.textBox17 = new System.Windows.Forms.TextBox();
-            this.textBox18 = new System.Windows.Forms.TextBox();
-            this.textBox19 = new System.Windows.Forms.TextBox();
-            this.textBox20 = new System.Windows.Forms.TextBox();
-            this.textBox21 = new System.Windows.Forms.TextBox();
-            this.textBox22 = new System.Windows.Forms.TextBox();
-            this.textBox23 = new System.Windows.Forms.TextBox();
-            this.textBox24 = new System.Windows.Forms.TextBox();
-            this.textBox25 = new System.Windows.Forms.TextBox();
-            this.textBox26 = new System.Windows.Forms.TextBox();
-            this.textBox27 = new System.Windows.Forms.TextBox();
-            this.textBox28 = new System.Windows.Forms.TextBox();
-            this.textBox29 = new System.Windows.Forms.TextBox();
-            this.textBox30 = new System.Windows.Forms.TextBox();
-            this.textBox31 = new System.Windows.Forms.TextBox();
-            this.textBox32 = new System.Windows.Forms.TextBox();
-            this.textBox33 = new System.Windows.Forms.TextBox();
-            this.textBox34 = new System.Windows.Forms.TextBox();
+            this.tb_11 = new System.Windows.Forms.TextBox();
+            this.tb_21 = new System.Windows.Forms.TextBox();
+            this.tb_31 = new System.Windows.Forms.TextBox();
+            this.tb_41 = new System.Windows.Forms.TextBox();
+            this.tb_12 = new System.Windows.Forms.TextBox();
+            this.tb_22 = new System.Windows.Forms.TextBox();
+            this.tb_32 = new System.Windows.Forms.TextBox();
+            this.tb_42 = new System.Windows.Forms.TextBox();
+            this.tb_13 = new System.Windows.Forms.TextBox();
+            this.tb_23 = new System.Windows.Forms.TextBox();
+            this.tb_33 = new System.Windows.Forms.TextBox();
+            this.tb_43 = new System.Windows.Forms.TextBox();
+            this.tb_14 = new System.Windows.Forms.TextBox();
+            this.tb_24 = new System.Windows.Forms.TextBox();
+            this.tb_34 = new System.Windows.Forms.TextBox();
+            this.tb_44 = new System.Windows.Forms.TextBox();
+            this.tb_15 = new System.Windows.Forms.TextBox();
+            this.tb_25 = new System.Windows.Forms.TextBox();
+            this.tb_54 = new System.Windows.Forms.TextBox();
+            this.tb_53 = new System.Windows.Forms.TextBox();
+            this.tb_52 = new System.Windows.Forms.TextBox();
+            this.tb_51 = new System.Windows.Forms.TextBox();
             this.tb_50 = new System.Windows.Forms.TextBox();
-            this.textBox36 = new System.Windows.Forms.TextBox();
-            this.textBox37 = new System.Windows.Forms.TextBox();
-            this.textBox38 = new System.Windows.Forms.TextBox();
-            this.textBox39 = new System.Windows.Forms.TextBox();
-            this.textBox40 = new System.Windows.Forms.TextBox();
-            this.textBox41 = new System.Windows.Forms.TextBox();
-            this.textBox42 = new System.Windows.Forms.TextBox();
-            this.textBox43 = new System.Windows.Forms.TextBox();
+            this.tb_35 = new System.Windows.Forms.TextBox();
+            this.tb_45 = new System.Windows.Forms.TextBox();
+            this.tb_55 = new System.Windows.Forms.TextBox();
+            this.tb_16 = new System.Windows.Forms.TextBox();
+            this.tb_26 = new System.Windows.Forms.TextBox();
+            this.tb_36 = new System.Windows.Forms.TextBox();
+            this.tb_46 = new System.Windows.Forms.TextBox();
+            this.tb_56 = new System.Windows.Forms.TextBox();
+            this.column0 = new System.Windows.Forms.Button();
             this.column1 = new System.Windows.Forms.Button();
             this.column2 = new System.Windows.Forms.Button();
             this.column3 = new System.Windows.Forms.Button();
             this.column4 = new System.Windows.Forms.Button();
             this.column5 = new System.Windows.Forms.Button();
             this.column6 = new System.Windows.Forms.Button();
-            this.column7 = new System.Windows.Forms.Button();
             this.btn_quit1 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
@@ -191,203 +191,203 @@
             this.tb_40.Size = new System.Drawing.Size(44, 40);
             this.tb_40.TabIndex = 11;
             // 
-            // textBox13
+            // tb_11
             // 
-            this.textBox13.Location = new System.Drawing.Point(90, 75);
-            this.textBox13.Margin = new System.Windows.Forms.Padding(2);
-            this.textBox13.Multiline = true;
-            this.textBox13.Name = "textBox13";
-            this.textBox13.Size = new System.Drawing.Size(44, 40);
-            this.textBox13.TabIndex = 12;
+            this.tb_11.Location = new System.Drawing.Point(90, 75);
+            this.tb_11.Margin = new System.Windows.Forms.Padding(2);
+            this.tb_11.Multiline = true;
+            this.tb_11.Name = "tb_11";
+            this.tb_11.Size = new System.Drawing.Size(44, 40);
+            this.tb_11.TabIndex = 12;
             // 
-            // textBox14
+            // tb_21
             // 
-            this.textBox14.Location = new System.Drawing.Point(90, 118);
-            this.textBox14.Margin = new System.Windows.Forms.Padding(2);
-            this.textBox14.Multiline = true;
-            this.textBox14.Name = "textBox14";
-            this.textBox14.Size = new System.Drawing.Size(44, 40);
-            this.textBox14.TabIndex = 13;
+            this.tb_21.Location = new System.Drawing.Point(90, 118);
+            this.tb_21.Margin = new System.Windows.Forms.Padding(2);
+            this.tb_21.Multiline = true;
+            this.tb_21.Name = "tb_21";
+            this.tb_21.Size = new System.Drawing.Size(44, 40);
+            this.tb_21.TabIndex = 13;
             // 
-            // textBox15
+            // tb_31
             // 
-            this.textBox15.Location = new System.Drawing.Point(90, 161);
-            this.textBox15.Margin = new System.Windows.Forms.Padding(2);
-            this.textBox15.Multiline = true;
-            this.textBox15.Name = "textBox15";
-            this.textBox15.Size = new System.Drawing.Size(44, 40);
-            this.textBox15.TabIndex = 14;
+            this.tb_31.Location = new System.Drawing.Point(90, 161);
+            this.tb_31.Margin = new System.Windows.Forms.Padding(2);
+            this.tb_31.Multiline = true;
+            this.tb_31.Name = "tb_31";
+            this.tb_31.Size = new System.Drawing.Size(44, 40);
+            this.tb_31.TabIndex = 14;
             // 
-            // textBox16
+            // tb_41
             // 
-            this.textBox16.Location = new System.Drawing.Point(90, 204);
-            this.textBox16.Margin = new System.Windows.Forms.Padding(2);
-            this.textBox16.Multiline = true;
-            this.textBox16.Name = "textBox16";
-            this.textBox16.Size = new System.Drawing.Size(44, 40);
-            this.textBox16.TabIndex = 15;
+            this.tb_41.Location = new System.Drawing.Point(90, 204);
+            this.tb_41.Margin = new System.Windows.Forms.Padding(2);
+            this.tb_41.Multiline = true;
+            this.tb_41.Name = "tb_41";
+            this.tb_41.Size = new System.Drawing.Size(44, 40);
+            this.tb_41.TabIndex = 15;
             // 
-            // textBox17
+            // tb_12
             // 
-            this.textBox17.Location = new System.Drawing.Point(164, 75);
-            this.textBox17.Margin = new System.Windows.Forms.Padding(2);
-            this.textBox17.Multiline = true;
-            this.textBox17.Name = "textBox17";
-            this.textBox17.Size = new System.Drawing.Size(44, 40);
-            this.textBox17.TabIndex = 16;
+            this.tb_12.Location = new System.Drawing.Point(164, 75);
+            this.tb_12.Margin = new System.Windows.Forms.Padding(2);
+            this.tb_12.Multiline = true;
+            this.tb_12.Name = "tb_12";
+            this.tb_12.Size = new System.Drawing.Size(44, 40);
+            this.tb_12.TabIndex = 16;
             // 
-            // textBox18
+            // tb_22
             // 
-            this.textBox18.Location = new System.Drawing.Point(164, 118);
-            this.textBox18.Margin = new System.Windows.Forms.Padding(2);
-            this.textBox18.Multiline = true;
-            this.textBox18.Name = "textBox18";
-            this.textBox18.Size = new System.Drawing.Size(44, 40);
-            this.textBox18.TabIndex = 17;
+            this.tb_22.Location = new System.Drawing.Point(164, 118);
+            this.tb_22.Margin = new System.Windows.Forms.Padding(2);
+            this.tb_22.Multiline = true;
+            this.tb_22.Name = "tb_22";
+            this.tb_22.Size = new System.Drawing.Size(44, 40);
+            this.tb_22.TabIndex = 17;
             // 
-            // textBox19
+            // tb_32
             // 
-            this.textBox19.Location = new System.Drawing.Point(164, 161);
-            this.textBox19.Margin = new System.Windows.Forms.Padding(2);
-            this.textBox19.Multiline = true;
-            this.textBox19.Name = "textBox19";
-            this.textBox19.Size = new System.Drawing.Size(44, 40);
-            this.textBox19.TabIndex = 18;
+            this.tb_32.Location = new System.Drawing.Point(164, 161);
+            this.tb_32.Margin = new System.Windows.Forms.Padding(2);
+            this.tb_32.Multiline = true;
+            this.tb_32.Name = "tb_32";
+            this.tb_32.Size = new System.Drawing.Size(44, 40);
+            this.tb_32.TabIndex = 18;
             // 
-            // textBox20
+            // tb_42
             // 
-            this.textBox20.Location = new System.Drawing.Point(164, 204);
-            this.textBox20.Margin = new System.Windows.Forms.Padding(2);
-            this.textBox20.Multiline = true;
-            this.textBox20.Name = "textBox20";
-            this.textBox20.Size = new System.Drawing.Size(44, 40);
-            this.textBox20.TabIndex = 19;
+            this.tb_42.Location = new System.Drawing.Point(164, 204);
+            this.tb_42.Margin = new System.Windows.Forms.Padding(2);
+            this.tb_42.Multiline = true;
+            this.tb_42.Name = "tb_42";
+            this.tb_42.Size = new System.Drawing.Size(44, 40);
+            this.tb_42.TabIndex = 19;
             // 
-            // textBox21
+            // tb_13
             // 
-            this.textBox21.Location = new System.Drawing.Point(241, 75);
-            this.textBox21.Margin = new System.Windows.Forms.Padding(2);
-            this.textBox21.Multiline = true;
-            this.textBox21.Name = "textBox21";
-            this.textBox21.Size = new System.Drawing.Size(44, 40);
-            this.textBox21.TabIndex = 20;
+            this.tb_13.Location = new System.Drawing.Point(241, 75);
+            this.tb_13.Margin = new System.Windows.Forms.Padding(2);
+            this.tb_13.Multiline = true;
+            this.tb_13.Name = "tb_13";
+            this.tb_13.Size = new System.Drawing.Size(44, 40);
+            this.tb_13.TabIndex = 20;
             // 
-            // textBox22
+            // tb_23
             // 
-            this.textBox22.Location = new System.Drawing.Point(241, 118);
-            this.textBox22.Margin = new System.Windows.Forms.Padding(2);
-            this.textBox22.Multiline = true;
-            this.textBox22.Name = "textBox22";
-            this.textBox22.Size = new System.Drawing.Size(44, 40);
-            this.textBox22.TabIndex = 21;
+            this.tb_23.Location = new System.Drawing.Point(241, 118);
+            this.tb_23.Margin = new System.Windows.Forms.Padding(2);
+            this.tb_23.Multiline = true;
+            this.tb_23.Name = "tb_23";
+            this.tb_23.Size = new System.Drawing.Size(44, 40);
+            this.tb_23.TabIndex = 21;
             // 
-            // textBox23
+            // tb_33
             // 
-            this.textBox23.Location = new System.Drawing.Point(241, 161);
-            this.textBox23.Margin = new System.Windows.Forms.Padding(2);
-            this.textBox23.Multiline = true;
-            this.textBox23.Name = "textBox23";
-            this.textBox23.Size = new System.Drawing.Size(44, 40);
-            this.textBox23.TabIndex = 22;
+            this.tb_33.Location = new System.Drawing.Point(241, 161);
+            this.tb_33.Margin = new System.Windows.Forms.Padding(2);
+            this.tb_33.Multiline = true;
+            this.tb_33.Name = "tb_33";
+            this.tb_33.Size = new System.Drawing.Size(44, 40);
+            this.tb_33.TabIndex = 22;
             // 
-            // textBox24
+            // tb_43
             // 
-            this.textBox24.Location = new System.Drawing.Point(241, 204);
-            this.textBox24.Margin = new System.Windows.Forms.Padding(2);
-            this.textBox24.Multiline = true;
-            this.textBox24.Name = "textBox24";
-            this.textBox24.Size = new System.Drawing.Size(44, 40);
-            this.textBox24.TabIndex = 23;
+            this.tb_43.Location = new System.Drawing.Point(241, 204);
+            this.tb_43.Margin = new System.Windows.Forms.Padding(2);
+            this.tb_43.Multiline = true;
+            this.tb_43.Name = "tb_43";
+            this.tb_43.Size = new System.Drawing.Size(44, 40);
+            this.tb_43.TabIndex = 23;
             // 
-            // textBox25
+            // tb_14
             // 
-            this.textBox25.Location = new System.Drawing.Point(317, 75);
-            this.textBox25.Margin = new System.Windows.Forms.Padding(2);
-            this.textBox25.Multiline = true;
-            this.textBox25.Name = "textBox25";
-            this.textBox25.Size = new System.Drawing.Size(44, 40);
-            this.textBox25.TabIndex = 24;
+            this.tb_14.Location = new System.Drawing.Point(317, 75);
+            this.tb_14.Margin = new System.Windows.Forms.Padding(2);
+            this.tb_14.Multiline = true;
+            this.tb_14.Name = "tb_14";
+            this.tb_14.Size = new System.Drawing.Size(44, 40);
+            this.tb_14.TabIndex = 24;
             // 
-            // textBox26
+            // tb_24
             // 
-            this.textBox26.Location = new System.Drawing.Point(317, 118);
-            this.textBox26.Margin = new System.Windows.Forms.Padding(2);
-            this.textBox26.Multiline = true;
-            this.textBox26.Name = "textBox26";
-            this.textBox26.Size = new System.Drawing.Size(44, 40);
-            this.textBox26.TabIndex = 25;
+            this.tb_24.Location = new System.Drawing.Point(317, 118);
+            this.tb_24.Margin = new System.Windows.Forms.Padding(2);
+            this.tb_24.Multiline = true;
+            this.tb_24.Name = "tb_24";
+            this.tb_24.Size = new System.Drawing.Size(44, 40);
+            this.tb_24.TabIndex = 25;
             // 
-            // textBox27
+            // tb_34
             // 
-            this.textBox27.Location = new System.Drawing.Point(317, 161);
-            this.textBox27.Margin = new System.Windows.Forms.Padding(2);
-            this.textBox27.Multiline = true;
-            this.textBox27.Name = "textBox27";
-            this.textBox27.Size = new System.Drawing.Size(44, 40);
-            this.textBox27.TabIndex = 26;
+            this.tb_34.Location = new System.Drawing.Point(317, 161);
+            this.tb_34.Margin = new System.Windows.Forms.Padding(2);
+            this.tb_34.Multiline = true;
+            this.tb_34.Name = "tb_34";
+            this.tb_34.Size = new System.Drawing.Size(44, 40);
+            this.tb_34.TabIndex = 26;
             // 
-            // textBox28
+            // tb_44
             // 
-            this.textBox28.Location = new System.Drawing.Point(317, 204);
-            this.textBox28.Margin = new System.Windows.Forms.Padding(2);
-            this.textBox28.Multiline = true;
-            this.textBox28.Name = "textBox28";
-            this.textBox28.Size = new System.Drawing.Size(44, 40);
-            this.textBox28.TabIndex = 27;
+            this.tb_44.Location = new System.Drawing.Point(317, 204);
+            this.tb_44.Margin = new System.Windows.Forms.Padding(2);
+            this.tb_44.Multiline = true;
+            this.tb_44.Name = "tb_44";
+            this.tb_44.Size = new System.Drawing.Size(44, 40);
+            this.tb_44.TabIndex = 27;
             // 
-            // textBox29
+            // tb_15
             // 
-            this.textBox29.Location = new System.Drawing.Point(393, 75);
-            this.textBox29.Margin = new System.Windows.Forms.Padding(2);
-            this.textBox29.Multiline = true;
-            this.textBox29.Name = "textBox29";
-            this.textBox29.Size = new System.Drawing.Size(44, 40);
-            this.textBox29.TabIndex = 28;
+            this.tb_15.Location = new System.Drawing.Point(393, 75);
+            this.tb_15.Margin = new System.Windows.Forms.Padding(2);
+            this.tb_15.Multiline = true;
+            this.tb_15.Name = "tb_15";
+            this.tb_15.Size = new System.Drawing.Size(44, 40);
+            this.tb_15.TabIndex = 28;
             // 
-            // textBox30
+            // tb_25
             // 
-            this.textBox30.Location = new System.Drawing.Point(393, 118);
-            this.textBox30.Margin = new System.Windows.Forms.Padding(2);
-            this.textBox30.Multiline = true;
-            this.textBox30.Name = "textBox30";
-            this.textBox30.Size = new System.Drawing.Size(44, 40);
-            this.textBox30.TabIndex = 29;
+            this.tb_25.Location = new System.Drawing.Point(393, 118);
+            this.tb_25.Margin = new System.Windows.Forms.Padding(2);
+            this.tb_25.Multiline = true;
+            this.tb_25.Name = "tb_25";
+            this.tb_25.Size = new System.Drawing.Size(44, 40);
+            this.tb_25.TabIndex = 29;
             // 
-            // textBox31
+            // tb_54
             // 
-            this.textBox31.Location = new System.Drawing.Point(317, 247);
-            this.textBox31.Margin = new System.Windows.Forms.Padding(2);
-            this.textBox31.Multiline = true;
-            this.textBox31.Name = "textBox31";
-            this.textBox31.Size = new System.Drawing.Size(44, 40);
-            this.textBox31.TabIndex = 30;
+            this.tb_54.Location = new System.Drawing.Point(317, 247);
+            this.tb_54.Margin = new System.Windows.Forms.Padding(2);
+            this.tb_54.Multiline = true;
+            this.tb_54.Name = "tb_54";
+            this.tb_54.Size = new System.Drawing.Size(44, 40);
+            this.tb_54.TabIndex = 30;
             // 
-            // textBox32
+            // tb_53
             // 
-            this.textBox32.Location = new System.Drawing.Point(241, 247);
-            this.textBox32.Margin = new System.Windows.Forms.Padding(2);
-            this.textBox32.Multiline = true;
-            this.textBox32.Name = "textBox32";
-            this.textBox32.Size = new System.Drawing.Size(44, 40);
-            this.textBox32.TabIndex = 31;
+            this.tb_53.Location = new System.Drawing.Point(241, 247);
+            this.tb_53.Margin = new System.Windows.Forms.Padding(2);
+            this.tb_53.Multiline = true;
+            this.tb_53.Name = "tb_53";
+            this.tb_53.Size = new System.Drawing.Size(44, 40);
+            this.tb_53.TabIndex = 31;
             // 
-            // textBox33
+            // tb_52
             // 
-            this.textBox33.Location = new System.Drawing.Point(164, 247);
-            this.textBox33.Margin = new System.Windows.Forms.Padding(2);
-            this.textBox33.Multiline = true;
-            this.textBox33.Name = "textBox33";
-            this.textBox33.Size = new System.Drawing.Size(44, 40);
-            this.textBox33.TabIndex = 32;
+            this.tb_52.Location = new System.Drawing.Point(164, 247);
+            this.tb_52.Margin = new System.Windows.Forms.Padding(2);
+            this.tb_52.Multiline = true;
+            this.tb_52.Name = "tb_52";
+            this.tb_52.Size = new System.Drawing.Size(44, 40);
+            this.tb_52.TabIndex = 32;
             // 
-            // textBox34
+            // tb_51
             // 
-            this.textBox34.Location = new System.Drawing.Point(90, 247);
-            this.textBox34.Margin = new System.Windows.Forms.Padding(2);
-            this.textBox34.Multiline = true;
-            this.textBox34.Name = "textBox34";
-            this.textBox34.Size = new System.Drawing.Size(44, 40);
-            this.textBox34.TabIndex = 33;
+            this.tb_51.Location = new System.Drawing.Point(90, 247);
+            this.tb_51.Margin = new System.Windows.Forms.Padding(2);
+            this.tb_51.Multiline = true;
+            this.tb_51.Name = "tb_51";
+            this.tb_51.Size = new System.Drawing.Size(44, 40);
+            this.tb_51.TabIndex = 33;
             // 
             // tb_50
             // 
@@ -398,154 +398,154 @@
             this.tb_50.Size = new System.Drawing.Size(44, 40);
             this.tb_50.TabIndex = 34;
             // 
-            // textBox36
+            // tb_35
             // 
-            this.textBox36.Location = new System.Drawing.Point(393, 161);
-            this.textBox36.Margin = new System.Windows.Forms.Padding(2);
-            this.textBox36.Multiline = true;
-            this.textBox36.Name = "textBox36";
-            this.textBox36.Size = new System.Drawing.Size(44, 40);
-            this.textBox36.TabIndex = 35;
+            this.tb_35.Location = new System.Drawing.Point(393, 161);
+            this.tb_35.Margin = new System.Windows.Forms.Padding(2);
+            this.tb_35.Multiline = true;
+            this.tb_35.Name = "tb_35";
+            this.tb_35.Size = new System.Drawing.Size(44, 40);
+            this.tb_35.TabIndex = 35;
             // 
-            // textBox37
+            // tb_45
             // 
-            this.textBox37.Location = new System.Drawing.Point(393, 204);
-            this.textBox37.Margin = new System.Windows.Forms.Padding(2);
-            this.textBox37.Multiline = true;
-            this.textBox37.Name = "textBox37";
-            this.textBox37.Size = new System.Drawing.Size(44, 40);
-            this.textBox37.TabIndex = 36;
+            this.tb_45.Location = new System.Drawing.Point(393, 204);
+            this.tb_45.Margin = new System.Windows.Forms.Padding(2);
+            this.tb_45.Multiline = true;
+            this.tb_45.Name = "tb_45";
+            this.tb_45.Size = new System.Drawing.Size(44, 40);
+            this.tb_45.TabIndex = 36;
             // 
-            // textBox38
+            // tb_55
             // 
-            this.textBox38.Location = new System.Drawing.Point(393, 247);
-            this.textBox38.Margin = new System.Windows.Forms.Padding(2);
-            this.textBox38.Multiline = true;
-            this.textBox38.Name = "textBox38";
-            this.textBox38.Size = new System.Drawing.Size(44, 40);
-            this.textBox38.TabIndex = 37;
+            this.tb_55.Location = new System.Drawing.Point(393, 247);
+            this.tb_55.Margin = new System.Windows.Forms.Padding(2);
+            this.tb_55.Multiline = true;
+            this.tb_55.Name = "tb_55";
+            this.tb_55.Size = new System.Drawing.Size(44, 40);
+            this.tb_55.TabIndex = 37;
             // 
-            // textBox39
+            // tb_16
             // 
-            this.textBox39.Location = new System.Drawing.Point(473, 75);
-            this.textBox39.Margin = new System.Windows.Forms.Padding(2);
-            this.textBox39.Multiline = true;
-            this.textBox39.Name = "textBox39";
-            this.textBox39.Size = new System.Drawing.Size(44, 40);
-            this.textBox39.TabIndex = 38;
+            this.tb_16.Location = new System.Drawing.Point(473, 75);
+            this.tb_16.Margin = new System.Windows.Forms.Padding(2);
+            this.tb_16.Multiline = true;
+            this.tb_16.Name = "tb_16";
+            this.tb_16.Size = new System.Drawing.Size(44, 40);
+            this.tb_16.TabIndex = 38;
             // 
-            // textBox40
+            // tb_26
             // 
-            this.textBox40.Location = new System.Drawing.Point(473, 118);
-            this.textBox40.Margin = new System.Windows.Forms.Padding(2);
-            this.textBox40.Multiline = true;
-            this.textBox40.Name = "textBox40";
-            this.textBox40.Size = new System.Drawing.Size(44, 40);
-            this.textBox40.TabIndex = 39;
+            this.tb_26.Location = new System.Drawing.Point(473, 118);
+            this.tb_26.Margin = new System.Windows.Forms.Padding(2);
+            this.tb_26.Multiline = true;
+            this.tb_26.Name = "tb_26";
+            this.tb_26.Size = new System.Drawing.Size(44, 40);
+            this.tb_26.TabIndex = 39;
             // 
-            // textBox41
+            // tb_36
             // 
-            this.textBox41.Location = new System.Drawing.Point(473, 161);
-            this.textBox41.Margin = new System.Windows.Forms.Padding(2);
-            this.textBox41.Multiline = true;
-            this.textBox41.Name = "textBox41";
-            this.textBox41.Size = new System.Drawing.Size(44, 40);
-            this.textBox41.TabIndex = 40;
+            this.tb_36.Location = new System.Drawing.Point(473, 161);
+            this.tb_36.Margin = new System.Windows.Forms.Padding(2);
+            this.tb_36.Multiline = true;
+            this.tb_36.Name = "tb_36";
+            this.tb_36.Size = new System.Drawing.Size(44, 40);
+            this.tb_36.TabIndex = 40;
             // 
-            // textBox42
+            // tb_46
             // 
-            this.textBox42.Location = new System.Drawing.Point(473, 204);
-            this.textBox42.Margin = new System.Windows.Forms.Padding(2);
-            this.textBox42.Multiline = true;
-            this.textBox42.Name = "textBox42";
-            this.textBox42.Size = new System.Drawing.Size(44, 40);
-            this.textBox42.TabIndex = 41;
+            this.tb_46.Location = new System.Drawing.Point(473, 204);
+            this.tb_46.Margin = new System.Windows.Forms.Padding(2);
+            this.tb_46.Multiline = true;
+            this.tb_46.Name = "tb_46";
+            this.tb_46.Size = new System.Drawing.Size(44, 40);
+            this.tb_46.TabIndex = 41;
             // 
-            // textBox43
+            // tb_56
             // 
-            this.textBox43.Location = new System.Drawing.Point(473, 247);
-            this.textBox43.Margin = new System.Windows.Forms.Padding(2);
-            this.textBox43.Multiline = true;
-            this.textBox43.Name = "textBox43";
-            this.textBox43.Size = new System.Drawing.Size(44, 40);
-            this.textBox43.TabIndex = 42;
+            this.tb_56.Location = new System.Drawing.Point(473, 247);
+            this.tb_56.Margin = new System.Windows.Forms.Padding(2);
+            this.tb_56.Multiline = true;
+            this.tb_56.Name = "tb_56";
+            this.tb_56.Size = new System.Drawing.Size(44, 40);
+            this.tb_56.TabIndex = 42;
+            // 
+            // column0
+            // 
+            this.column0.Location = new System.Drawing.Point(8, -1);
+            this.column0.Margin = new System.Windows.Forms.Padding(2);
+            this.column0.Name = "column0";
+            this.column0.Size = new System.Drawing.Size(55, 21);
+            this.column0.TabIndex = 43;
+            this.column0.Text = "column 1";
+            this.column0.UseVisualStyleBackColor = true;
+            this.column0.Click += new System.EventHandler(this.getColumn);
             // 
             // column1
             // 
-            this.column1.Location = new System.Drawing.Point(8, -1);
+            this.column1.Location = new System.Drawing.Point(83, -1);
             this.column1.Margin = new System.Windows.Forms.Padding(2);
             this.column1.Name = "column1";
             this.column1.Size = new System.Drawing.Size(55, 21);
-            this.column1.TabIndex = 43;
-            this.column1.Text = "column 1";
+            this.column1.TabIndex = 44;
+            this.column1.Text = "column 2";
             this.column1.UseVisualStyleBackColor = true;
             this.column1.Click += new System.EventHandler(this.getColumn);
             // 
             // column2
             // 
-            this.column2.Location = new System.Drawing.Point(83, -1);
+            this.column2.Location = new System.Drawing.Point(158, -1);
             this.column2.Margin = new System.Windows.Forms.Padding(2);
             this.column2.Name = "column2";
             this.column2.Size = new System.Drawing.Size(55, 21);
-            this.column2.TabIndex = 44;
-            this.column2.Text = "column 2";
+            this.column2.TabIndex = 45;
+            this.column2.Text = "column 3";
             this.column2.UseVisualStyleBackColor = true;
             this.column2.Click += new System.EventHandler(this.getColumn);
             // 
             // column3
             // 
-            this.column3.Location = new System.Drawing.Point(158, -1);
+            this.column3.Location = new System.Drawing.Point(235, -1);
             this.column3.Margin = new System.Windows.Forms.Padding(2);
             this.column3.Name = "column3";
             this.column3.Size = new System.Drawing.Size(55, 21);
-            this.column3.TabIndex = 45;
-            this.column3.Text = "column 3";
+            this.column3.TabIndex = 46;
+            this.column3.Text = "column 4";
             this.column3.UseVisualStyleBackColor = true;
             this.column3.Click += new System.EventHandler(this.getColumn);
             // 
             // column4
             // 
-            this.column4.Location = new System.Drawing.Point(235, -1);
+            this.column4.Location = new System.Drawing.Point(310, -1);
             this.column4.Margin = new System.Windows.Forms.Padding(2);
             this.column4.Name = "column4";
             this.column4.Size = new System.Drawing.Size(55, 21);
-            this.column4.TabIndex = 46;
-            this.column4.Text = "column 4";
+            this.column4.TabIndex = 47;
+            this.column4.Text = "column 5";
             this.column4.UseVisualStyleBackColor = true;
             this.column4.Click += new System.EventHandler(this.getColumn);
             // 
             // column5
             // 
-            this.column5.Location = new System.Drawing.Point(310, -1);
+            this.column5.Location = new System.Drawing.Point(387, -1);
             this.column5.Margin = new System.Windows.Forms.Padding(2);
             this.column5.Name = "column5";
             this.column5.Size = new System.Drawing.Size(55, 21);
-            this.column5.TabIndex = 47;
-            this.column5.Text = "column 5";
+            this.column5.TabIndex = 48;
+            this.column5.Text = "column";
             this.column5.UseVisualStyleBackColor = true;
             this.column5.Click += new System.EventHandler(this.getColumn);
             // 
             // column6
             // 
-            this.column6.Location = new System.Drawing.Point(387, -1);
+            this.column6.Location = new System.Drawing.Point(470, -1);
             this.column6.Margin = new System.Windows.Forms.Padding(2);
             this.column6.Name = "column6";
             this.column6.Size = new System.Drawing.Size(55, 21);
-            this.column6.TabIndex = 48;
-            this.column6.Text = "column";
+            this.column6.TabIndex = 49;
+            this.column6.Text = "column 7";
             this.column6.UseVisualStyleBackColor = true;
             this.column6.Click += new System.EventHandler(this.getColumn);
-            // 
-            // column7
-            // 
-            this.column7.Location = new System.Drawing.Point(470, -1);
-            this.column7.Margin = new System.Windows.Forms.Padding(2);
-            this.column7.Name = "column7";
-            this.column7.Size = new System.Drawing.Size(55, 21);
-            this.column7.TabIndex = 49;
-            this.column7.Text = "column 7";
-            this.column7.UseVisualStyleBackColor = true;
-            this.column7.Click += new System.EventHandler(this.getColumn);
             // 
             // btn_quit1
             // 
@@ -565,44 +565,44 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(533, 337);
             this.Controls.Add(this.btn_quit1);
-            this.Controls.Add(this.column7);
             this.Controls.Add(this.column6);
             this.Controls.Add(this.column5);
             this.Controls.Add(this.column4);
             this.Controls.Add(this.column3);
             this.Controls.Add(this.column2);
             this.Controls.Add(this.column1);
-            this.Controls.Add(this.textBox43);
-            this.Controls.Add(this.textBox42);
-            this.Controls.Add(this.textBox41);
-            this.Controls.Add(this.textBox40);
-            this.Controls.Add(this.textBox39);
-            this.Controls.Add(this.textBox38);
-            this.Controls.Add(this.textBox37);
-            this.Controls.Add(this.textBox36);
+            this.Controls.Add(this.column0);
+            this.Controls.Add(this.tb_56);
+            this.Controls.Add(this.tb_46);
+            this.Controls.Add(this.tb_36);
+            this.Controls.Add(this.tb_26);
+            this.Controls.Add(this.tb_16);
+            this.Controls.Add(this.tb_55);
+            this.Controls.Add(this.tb_45);
+            this.Controls.Add(this.tb_35);
             this.Controls.Add(this.tb_50);
-            this.Controls.Add(this.textBox34);
-            this.Controls.Add(this.textBox33);
-            this.Controls.Add(this.textBox32);
-            this.Controls.Add(this.textBox31);
-            this.Controls.Add(this.textBox30);
-            this.Controls.Add(this.textBox29);
-            this.Controls.Add(this.textBox28);
-            this.Controls.Add(this.textBox27);
-            this.Controls.Add(this.textBox26);
-            this.Controls.Add(this.textBox25);
-            this.Controls.Add(this.textBox24);
-            this.Controls.Add(this.textBox23);
-            this.Controls.Add(this.textBox22);
-            this.Controls.Add(this.textBox21);
-            this.Controls.Add(this.textBox20);
-            this.Controls.Add(this.textBox19);
-            this.Controls.Add(this.textBox18);
-            this.Controls.Add(this.textBox17);
-            this.Controls.Add(this.textBox16);
-            this.Controls.Add(this.textBox15);
-            this.Controls.Add(this.textBox14);
-            this.Controls.Add(this.textBox13);
+            this.Controls.Add(this.tb_51);
+            this.Controls.Add(this.tb_52);
+            this.Controls.Add(this.tb_53);
+            this.Controls.Add(this.tb_54);
+            this.Controls.Add(this.tb_25);
+            this.Controls.Add(this.tb_15);
+            this.Controls.Add(this.tb_44);
+            this.Controls.Add(this.tb_34);
+            this.Controls.Add(this.tb_24);
+            this.Controls.Add(this.tb_14);
+            this.Controls.Add(this.tb_43);
+            this.Controls.Add(this.tb_33);
+            this.Controls.Add(this.tb_23);
+            this.Controls.Add(this.tb_13);
+            this.Controls.Add(this.tb_42);
+            this.Controls.Add(this.tb_32);
+            this.Controls.Add(this.tb_22);
+            this.Controls.Add(this.tb_12);
+            this.Controls.Add(this.tb_41);
+            this.Controls.Add(this.tb_31);
+            this.Controls.Add(this.tb_21);
+            this.Controls.Add(this.tb_11);
             this.Controls.Add(this.tb_40);
             this.Controls.Add(this.tb_30);
             this.Controls.Add(this.tb_20);
@@ -637,44 +637,44 @@
         private System.Windows.Forms.TextBox tb_20;
         private System.Windows.Forms.TextBox tb_30;
         private System.Windows.Forms.TextBox tb_40;
-        private System.Windows.Forms.TextBox textBox13;
-        private System.Windows.Forms.TextBox textBox14;
-        private System.Windows.Forms.TextBox textBox15;
-        private System.Windows.Forms.TextBox textBox16;
-        private System.Windows.Forms.TextBox textBox17;
-        private System.Windows.Forms.TextBox textBox18;
-        private System.Windows.Forms.TextBox textBox19;
-        private System.Windows.Forms.TextBox textBox20;
-        private System.Windows.Forms.TextBox textBox21;
-        private System.Windows.Forms.TextBox textBox22;
-        private System.Windows.Forms.TextBox textBox23;
-        private System.Windows.Forms.TextBox textBox24;
-        private System.Windows.Forms.TextBox textBox25;
-        private System.Windows.Forms.TextBox textBox26;
-        private System.Windows.Forms.TextBox textBox27;
-        private System.Windows.Forms.TextBox textBox28;
-        private System.Windows.Forms.TextBox textBox29;
-        private System.Windows.Forms.TextBox textBox30;
-        private System.Windows.Forms.TextBox textBox31;
-        private System.Windows.Forms.TextBox textBox32;
-        private System.Windows.Forms.TextBox textBox33;
-        private System.Windows.Forms.TextBox textBox34;
+        private System.Windows.Forms.TextBox tb_11;
+        private System.Windows.Forms.TextBox tb_21;
+        private System.Windows.Forms.TextBox tb_31;
+        private System.Windows.Forms.TextBox tb_41;
+        private System.Windows.Forms.TextBox tb_12;
+        private System.Windows.Forms.TextBox tb_22;
+        private System.Windows.Forms.TextBox tb_32;
+        private System.Windows.Forms.TextBox tb_42;
+        private System.Windows.Forms.TextBox tb_13;
+        private System.Windows.Forms.TextBox tb_23;
+        private System.Windows.Forms.TextBox tb_33;
+        private System.Windows.Forms.TextBox tb_43;
+        private System.Windows.Forms.TextBox tb_14;
+        private System.Windows.Forms.TextBox tb_24;
+        private System.Windows.Forms.TextBox tb_34;
+        private System.Windows.Forms.TextBox tb_44;
+        private System.Windows.Forms.TextBox tb_15;
+        private System.Windows.Forms.TextBox tb_25;
+        private System.Windows.Forms.TextBox tb_54;
+        private System.Windows.Forms.TextBox tb_53;
+        private System.Windows.Forms.TextBox tb_52;
+        private System.Windows.Forms.TextBox tb_51;
         private System.Windows.Forms.TextBox tb_50;
-        private System.Windows.Forms.TextBox textBox36;
-        private System.Windows.Forms.TextBox textBox37;
-        private System.Windows.Forms.TextBox textBox38;
-        private System.Windows.Forms.TextBox textBox39;
-        private System.Windows.Forms.TextBox textBox40;
-        private System.Windows.Forms.TextBox textBox41;
-        private System.Windows.Forms.TextBox textBox42;
-        private System.Windows.Forms.TextBox textBox43;
+        private System.Windows.Forms.TextBox tb_35;
+        private System.Windows.Forms.TextBox tb_45;
+        private System.Windows.Forms.TextBox tb_55;
+        private System.Windows.Forms.TextBox tb_16;
+        private System.Windows.Forms.TextBox tb_26;
+        private System.Windows.Forms.TextBox tb_36;
+        private System.Windows.Forms.TextBox tb_46;
+        private System.Windows.Forms.TextBox tb_56;
+        private System.Windows.Forms.Button column0;
         private System.Windows.Forms.Button column1;
         private System.Windows.Forms.Button column2;
         private System.Windows.Forms.Button column3;
         private System.Windows.Forms.Button column4;
         private System.Windows.Forms.Button column5;
         private System.Windows.Forms.Button column6;
-        private System.Windows.Forms.Button column7;
         private System.Windows.Forms.Button btn_quit1;
     }
 }
