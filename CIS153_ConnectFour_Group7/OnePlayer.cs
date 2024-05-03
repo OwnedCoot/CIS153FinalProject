@@ -34,5 +34,10 @@ namespace CIS153_ConnectFour_Group7
             //Exits the application on click
             System.Environment.Exit(0);
         }
+
+        private void OnePlayer_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

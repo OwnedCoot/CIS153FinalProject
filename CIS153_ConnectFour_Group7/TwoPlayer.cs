@@ -241,8 +241,11 @@ namespace CIS153_ConnectFour_Group7
         //this was the the leftover basic code for pen to draw objects, left it here in case we wanted to revist the idea feel free to delet if you wish
         //private void TwoPlayer_Paint(object sender, PaintEventArgs e)
         //{
-        //    Color Blue = Color.FromArgb(0,0,255);
+        //    Color Blue = Color.FromArgb(255, 0, 0);
         //    Pen BluePen = new Pen(Blue);
+        //    BluePen.Width = 25;
+        //    e.Graphics.DrawEllipse(Pens.Blue, 400, 150, 400, 400);
         //}
+        
     }
 }
