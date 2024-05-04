@@ -40,28 +40,28 @@ namespace CIS153_ConnectFour_Group7
                 return;
             }
 
-            // Create a new string array with 3 lines of 0s
-            string[] stats = new string[3] { "0", "0", "0" };
+            // Create a new string list with 3 lines of 0s
+            List<string> stats = new List<string> { "0", "0", "0" };
 
             // Write the 3 lines to the file
             File.WriteAllLines(fileName, stats);
         }
 
 
-        // Read all lines from the statistics file and return them as a string array
-        public static string[] ReadStatistics()
+        // Read all lines from the statistics file and return them as a string list
+        public static List<string> ReadStatistics()
         {
             // Get the full path to the file using the same method as InitStatistics()
             string fileName = Path.Combine(Directory.GetParent(Environment.CurrentDirectory).Parent.FullName, "Statistics.txt");
 
-            // Read all lines from the file into a string array
-            string[] stats = File.ReadAllLines(fileName);
+            // Read all lines from the file into a string list
+            List<string> stats = File.ReadAllLines(fileName).ToList();
 
             return stats;
         }
 
-        // Write the statistics to the statistics file from a string array
-        public static void WriteStatistics(string[] stats)
+        // Write the statistics to the statistics file from a string list
+        public static void WriteStatistics(List<string> stats)
         {
             // Get the full path to the file using the same method as InitStatistics()
             string fileName = Path.Combine(Directory.GetParent(Environment.CurrentDirectory).Parent.FullName, "Statistics.txt");
@@ -75,24 +75,24 @@ namespace CIS153_ConnectFour_Group7
         // ==================================================================
 
         /* The Moves file is a text file that contains a list of moves in the format:
-         * [Player],[Column],[Row]
+         * [Player],[Row],[Column]
          * where: [Player] is either 1 or 2, [Column] is the column number (0-6), and [Row] is the row number (0-5)
          */
 
-        // Read all lines from the moves file and return them as a string array
-        public static string[] ReadMoves()
+        // Read all lines from the moves file and return them as a string list
+        public static List<string> ReadMoves()
         {
             // Get the full path to the file using the same method as InitStatistics(), but with Moves.txt as the file name
             string fileName = Path.Combine(Directory.GetParent(Environment.CurrentDirectory).Parent.FullName, "Moves.txt");
 
-            // Read all lines from the file into a string array
-            string[] moves = File.ReadAllLines(fileName);
+            // Read all lines from the file into a string list
+            List<string> moves = File.ReadAllLines(fileName).ToList();
 
             return moves;
         }
 
-        // Write the moves to the moves file from a string array
-        public static void WriteMoves(string[] moves)
+        // Write the moves to the moves file from a string list
+        public static void WriteMoves(List<string> moves)
         {
             // Get the full path to the file using the same method as InitStatistics(), but with Moves.txt as the file name
             string fileName = Path.Combine(Directory.GetParent(Environment.CurrentDirectory).Parent.FullName, "Moves.txt");
@@ -114,6 +114,40 @@ namespace CIS153_ConnectFour_Group7
             }
             
             return 1;
+        }
+
+        // Drop a piece in a column and return the row it was dropped in
+        public static void DropPiece(Board b, int col, int plr, List<string> moves)
+        {
+            // Check if the column is full
+            if (!b.IsColumnFull(col))
+            {
+                // Drop the piece in the column
+                for (int row = b.GetRows() - 1; row >= 0; row--)
+                {
+                    // Find the lowest empty cell in the column
+                    if (b.GetCell(row, col).GetPlayer() == 0)
+                    {
+                        // Set the player in the cell and return the row
+                        b.GetCell(row, col).SetPlayer(plr);
+
+                        // Switch players
+                        ChangePlayer(plr);
+
+                        // Change the color of the cell
+                        b.ChangeColor(row, col);
+
+                        // Save the move to the moves string list in the format: [Player],[Row],[Column]
+                        moves.Add($"{plr},{row},{col}");
+
+                        // Exit the loop
+                        break;
+                    }
+                }
+
+                // Write the moves to the moves file
+                WriteMoves(moves);
+            }
         }
     }
 }

@@ -22,7 +22,9 @@ namespace CIS153_ConnectFour_Group7
         // Current player
         private int curPlayer = 1;
 
-
+        // A string list to hold the moves made by the players
+        // Has a size of 42 because there are 42 possible moves in Connect Four
+        private List<string> moves = new List<string>(42);
 
 
         //==========CONSTRUCTORS==========
@@ -41,92 +43,102 @@ namespace CIS153_ConnectFour_Group7
         //==========BUTTON CLICKS==========
         private void btn_quit1_Click(object sender, EventArgs e)
         {
+            // Clear the moves list and write the moves to the moves file
+            moves.Clear();
+            GameUtilities.WriteMoves(moves);
+
             //Exits the application on click
             System.Environment.Exit(0);
         }
 
         // Logic for after a move is made
-        private int moveChecks()
+        private bool moveChecks()
         {
-            /* return 1 = the current player has won
-             * return 2 = the board is full (draw)
-             * return 0 = the game continues
-             */ 
-
             // Check for a win
             if (board.CheckWin(curPlayer))
             {
-                return 1;
+                // Debug: Write the winning player to the console
+                Console.WriteLine("Player " + curPlayer + " wins!");
+                return false;
             }
 
             // Check for a draw (board is full)
             if (board.IsFull())
             {
-                return 2;
+                return false;
             }
 
-            // If no win or draw, switch players and continue the game
-            GameUtilities.ChangePlayer(curPlayer);
-            return 0;
+            // If no win or draw, return true to continue the game
+            return true;
         }
         
         // Given the column number, find the lowest empty cell and fill it with the current player's color
         private void column_Click(int c)
         {
-            // Find the lowest empty cell in column 1
-            for (int i = 5; i >= 0; i--)
+            // Check if the column is full
+            if (board.IsColumnFull(c))
             {
-                // Check if the cell in row i is empty
-                if (board.GetCell(i, c).GetPlayer() == 0)
+                // If the column is full, display a message and return
+                lbl_Full.Text = $"Column {c + 1} is full!";
+                return;
+            }
+
+            // If the column is not full, clear the full column message
+            lbl_Full.Text = "";
+
+            // Drop the piece in the column, save the move, write the move to the moves file, and switch players if the move is valid
+            GameUtilities.DropPiece(board, c, curPlayer, moves);
+
+            // Run the move checks after a move is made
+            bool moveSuccess = moveChecks();
+
+            // If the move was successful, run post-move operations
+            if (moveSuccess)
+            {
+                // If no win or draw, switch players and continue the game
+                curPlayer = GameUtilities.ChangePlayer(curPlayer);
+
+                // Update the current player label
+                lbl_CurrentPlayer.Text = "Player " + curPlayer + "'s turn";
+
+                // Change the color of the current player label depending on the player
+                if (curPlayer == 1)
                 {
-                    // Set the cell to the current player
-                    board.GetCell(i, c).SetPlayer(curPlayer);
-
-                    // -- Code for changing the color of the button overlay goes here (For when we switch to buttons) --
-                    board.ChangeColor(i, c);
-
-                    // change the player ***I think this should be somewhere else but I am putting it
-                    // here for testing purposes***
-
-                    if (curPlayer == 1)
-                    {
-                        //change from P1 to P2
-                        curPlayer = 2;
-                    }
-                    else if (curPlayer == 2)
-                    {
-                        //change from P2 to P1
-                        curPlayer = 1;
-                    }
-
-                    break;
+                    // Player 1 (Red)
+                    lbl_CurrentPlayer.ForeColor = Color.Firebrick;
+                }
+                else
+                {
+                    // Player 2 (Yellow)
+                    lbl_CurrentPlayer.ForeColor = Color.Goldenrod;
                 }
             }
 
-            // Run the move checks after a move is made
-            int result = moveChecks();
-
-            switch (result)
+            // If the move was not successful, end the game
+            else
             {
-                case 1:
+                // Check if a player won
+                if (board.CheckWin(curPlayer))
                 {
-                    // -- Code for end game win goes here --
-                    
-                    break;
+                    // Temp: Update the current player label to show the winning player
+                    lbl_CurrentPlayer.Text = "Player " + curPlayer + " wins!";
                 }
 
-                case 2:
+                // Check if the it was a draw
+                else if (board.IsFull())
                 {
-                    // -- Code for end game draw goes here --
-
-                    break;
+                    // Temp: Update the current player label to show that it was a draw
+                    lbl_CurrentPlayer.Text = "It's a draw!";
                 }
 
-                case 0:
-                {
-                    // Continue the game
-                    break;
-                }
+                // Disable all column buttons
+                column0.Enabled = false;
+                column1.Enabled = false;
+                column2.Enabled = false;
+                column3.Enabled = false;
+                column4.Enabled = false;
+                column5.Enabled = false;
+                column6.Enabled = false;
             }
         }
 
@@ -153,6 +165,8 @@ namespace CIS153_ConnectFour_Group7
         // Initialize the 2D array of text boxes.
         // Because the text boxes are pre-placed, I am just going to assign their names to each element
         // in the 2D array instead of make code that creates new text boxes.
+
+        // Format: tb_[row][column]
 
         private void InitializeTextBoxes()
         {

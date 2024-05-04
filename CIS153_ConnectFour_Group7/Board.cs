@@ -102,6 +102,19 @@ namespace CIS153_ConnectFour_Group7
             return true;
         }
 
+        // Check if a column is full. Used to determine if a player can drop a piece in a column
+        public bool IsColumnFull(int col)
+        {
+            // Check if the top cell in the column is empty
+            if (board[0, col].GetPlayer() == 0)
+            {
+                return false;
+            }
+
+            // If the top cell is not empty, the column is full
+            return true;
+        }
+
         // Check if a player has won the game
         public bool CheckWin(int player)
         {
@@ -174,19 +187,25 @@ namespace CIS153_ConnectFour_Group7
             return false;
         }
 
+        // Change the color of the textbox to the player's color or empty cell
+        // (Player 1 = Red, Player 2/CPU = Yellow)
         public void ChangeColor(int r, int c)
         {
+            // Check which player is in the cell and change the color accordingly
             if (board[r,c].GetPlayer() == 1)
             {
-            textBoxes[r, c].BackColor = Color.Red;
+                textBoxes[r, c].BackColor = Color.Red;
             }
+
             else if (board[r, c].GetPlayer() == 2)
             {
-            textBoxes[r, c].BackColor = Color.Yellow;
+                textBoxes[r, c].BackColor = Color.Yellow;
             }
+
+            // If the cell is not empty, but the player is not 1 or 2, then there is an error
             else
             {
-            Console.WriteLine("ERROR IN COLOR CHANGE");
+                Console.WriteLine("ERROR IN COLOR CHANGE");
             }
         }
 
