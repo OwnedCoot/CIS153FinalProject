@@ -122,6 +122,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Moves.txt" />
+    <None Include="Resources\transparent.png" />
     <Content Include="Statistics.txt" />
     <None Include="test.png" />
   </ItemGroup>

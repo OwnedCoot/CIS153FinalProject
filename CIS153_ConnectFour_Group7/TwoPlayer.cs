@@ -19,6 +19,8 @@ namespace CIS153_ConnectFour_Group7
 
         private Board board;
 
+        private bool gameOver = false;
+
         // Current player
         private int curPlayer = 1;
 
@@ -75,70 +77,75 @@ namespace CIS153_ConnectFour_Group7
         // Given the column number, find the lowest empty cell and fill it with the current player's color
         private void column_Click(int c)
         {
-            // Check if the column is full
-            if (board.IsColumnFull(c))
+            if (gameOver != true)
             {
-                // If the column is full, display a message and return
-                lbl_Full.Text = $"Column {c + 1} is full!";
-                return;
-            }
-
-            // If the column is not full, clear the full column message
-            lbl_Full.Text = "";
-
-            // Drop the piece in the column, save the move, write the move to the moves file, and switch players if the move is valid
-            GameUtilities.DropPiece(board, c, curPlayer, moves);
-
-            // Run the move checks after a move is made
-            bool moveSuccess = moveChecks();
-
-            // If the move was successful, run post-move operations
-            if (moveSuccess)
-            {
-                // If no win or draw, switch players and continue the game
-                curPlayer = GameUtilities.ChangePlayer(curPlayer);
-
-                // Update the current player label
-                lbl_CurrentPlayer.Text = "Player " + curPlayer + "'s turn";
-
-                // Change the color of the current player label depending on the player
-                if (curPlayer == 1)
+                // Check if the column is full
+                if (board.IsColumnFull(c))
                 {
-                    // Player 1 (Red)
-                    lbl_CurrentPlayer.ForeColor = Color.Firebrick;
+                    // If the column is full, display a message and return
+                    lbl_Full.Text = $"Column {c + 1} is full!";
+                    return;
                 }
+
+                // If the column is not full, clear the full column message
+                lbl_Full.Text = "";
+
+                // Drop the piece in the column, save the move, write the move to the moves file, and switch players if the move is valid
+                GameUtilities.DropPiece(board, c, curPlayer, moves);
+
+                // Run the move checks after a move is made
+                bool moveSuccess = moveChecks();
+
+                // If the move was successful, run post-move operations
+                if (moveSuccess)
+                {
+                    // If no win or draw, switch players and continue the game
+                    curPlayer = GameUtilities.ChangePlayer(curPlayer);
+
+                    // Update the current player label
+                    lbl_CurrentPlayer.Text = "Player " + curPlayer + "'s turn";
+
+                    // Change the color of the current player label depending on the player
+                    if (curPlayer == 1)
+                    {
+                        // Player 1 (Red)
+                        lbl_CurrentPlayer.ForeColor = Color.Firebrick;
+                    }
+                    else
+                    {
+                        // Player 2 (Yellow)
+                        lbl_CurrentPlayer.ForeColor = Color.Goldenrod;
+                    }
+                }
+
+                // If the move was not successful, end the game
                 else
                 {
-                    // Player 2 (Yellow)
-                    lbl_CurrentPlayer.ForeColor = Color.Goldenrod;
-                }
-            }
+                    // Check if a player won
+                    if (board.CheckWin(curPlayer))
+                    {
+                        // Temp: Update the current player label to show the winning player
+                        lbl_CurrentPlayer.Text = "Player " + curPlayer + " wins!";
+                        gameOver = true;
+                    }
 
-            // If the move was not successful, end the game
-            else
-            {
-                // Check if a player won
-                if (board.CheckWin(curPlayer))
-                {
-                    // Temp: Update the current player label to show the winning player
-                    lbl_CurrentPlayer.Text = "Player " + curPlayer + " wins!";
-                }
+                    // Check if the it was a draw
+                    else if (board.IsFull())
+                    {
+                        // Temp: Update the current player label to show that it was a draw
+                        lbl_CurrentPlayer.Text = "It's a draw!";
+                        gameOver = true;
+                    }
 
-                // Check if the it was a draw
-                else if (board.IsFull())
-                {
-                    // Temp: Update the current player label to show that it was a draw
-                    lbl_CurrentPlayer.Text = "It's a draw!";
+                    // Disable all column buttons
+                    column0.Enabled = false;
+                    column1.Enabled = false;
+                    column2.Enabled = false;
+                    column3.Enabled = false;
+                    column4.Enabled = false;
+                    column5.Enabled = false;
+                    column6.Enabled = false;
                 }
-
-                // Disable all column buttons
-                column0.Enabled = false;
-                column1.Enabled = false;
-                column2.Enabled = false;
-                column3.Enabled = false;
-                column4.Enabled = false;
-                column5.Enabled = false;
-                column6.Enabled = false;
             }
         }
 
@@ -158,6 +165,34 @@ namespace CIS153_ConnectFour_Group7
             column_Click(colNum);
         }
 
+        private void column1Click(object sender, EventArgs e)
+        {
+            column_Click(0);
+        }
+        private void column2Click(object sender, EventArgs e)
+        {
+            column_Click(1);
+        }
+        private void column3Click(object sender, EventArgs e)
+        {
+            column_Click(2);
+        }
+        private void column4Click(object sender, EventArgs e)
+        {
+            column_Click(3);
+        }
+        private void column5Click(object sender, EventArgs e)
+        {
+            column_Click(4);
+        }
+        private void column6Click(object sender, EventArgs e)
+        {
+            column_Click(5);
+        }
+        private void column7Click(object sender, EventArgs e)
+        {
+            column_Click(6);
+        }
 
         //========================
         // 2D array of TextBoxes
@@ -225,6 +260,380 @@ namespace CIS153_ConnectFour_Group7
             twoPlayerTBA[5, 6] = tb_56;
         }
 
+        //===============================================================
+        //  MOUSE HOVER AND EXIT FUNCTIONS
+        //===============================================================
+        private void Column1MouseHover(object sender, EventArgs e)
+        {
+            if (gameOver != true)
+            {
+                // Find the lowest empty cell in column 1
+                for (int i = 5; i >= 0; i--)
+                {
+                    // Check if the cell in row i is empty
+                    if (board.GetCell(i, 0).GetPlayer() == 0)
+                    {
+                        // Temporarily set the cell to the current player to visualize the ghost piece
+                        board.GetCell(i, 0).SetPlayer(curPlayer);
+
+                        // -- Code for changing the color of the button overlay goes here (For when we switch to buttons) --
+                        board.ChangeGhostPeice(i, 0);
+
+                        // Refresh the UI to display the ghost piece
+                        Refresh();
+
+                        // Restore the original state of the cell after visualization
+                        board.GetCell(i, 0).SetPlayer(0);
+
+                        break;
+                    }
+                }
+            }
+        }
+
+        private void Column1MouseLeave(object sender, EventArgs e)
+        {
+            for (int i = 5; i >= 0; i--)
+            {
+                // Check if the cell in row i is empty
+                if (board.GetCell(i, 0).GetPlayer() == 0)
+                {
+                    // Temporarily set the cell to the current player to visualize the ghost piece
+                    board.GetCell(i, 0).SetPlayer(curPlayer);
+
+                    // -- Code for changing the color of the button overlay goes here (For when we switch to buttons) --
+                    board.ChangeToDefaultColor(i, 0);
+
+                    // Refresh the UI to display the ghost piece
+                    Refresh();
+
+                    // Restore the original state of the cell after visualization
+                    board.GetCell(i, 0).SetPlayer(0);
+
+                    break;
+                }
+            }
+
+        }
+
+        private void Column2MouseHover(object sender, EventArgs e)
+        {
+            if (gameOver != true)
+            {
+                // Find the lowest empty cell in column 1
+                for (int i = 5; i >= 0; i--)
+                {
+                    // Check if the cell in row i is empty
+                    if (board.GetCell(i, 1).GetPlayer() == 0)
+                    {
+                        // Temporarily set the cell to the current player to visualize the ghost piece
+                        board.GetCell(i, 1).SetPlayer(curPlayer);
+
+                        // -- Code for changing the color of the button overlay goes here (For when we switch to buttons) --
+                        board.ChangeGhostPeice(i, 1);
+
+                        // Refresh the UI to display the ghost piece
+                        Refresh();
+
+                        // Restore the original state of the cell after visualization
+                        board.GetCell(i, 1).SetPlayer(0);
+
+                        break;
+                    }
+                }
+            }
+        }
+
+        private void Column2MouseLeave(object sender, EventArgs e)
+        {
+            for (int i = 5; i >= 0; i--)
+            {
+                // Check if the cell in row i is empty
+                if (board.GetCell(i, 1).GetPlayer() == 0)
+                {
+                    // Temporarily set the cell to the current player to visualize the ghost piece
+                    board.GetCell(i, 1).SetPlayer(curPlayer);
+
+                    // -- Code for changing the color of the button overlay goes here (For when we switch to buttons) --
+                    board.ChangeToDefaultColor(i, 1);
+
+                    // Refresh the UI to display the ghost piece
+                    Refresh();
+
+                    // Restore the original state of the cell after visualization
+                    board.GetCell(i, 1).SetPlayer(0);
+
+                    break;
+                }
+            }
+
+        }
+
+        private void Column3MouseHover(object sender, EventArgs e)
+        {
+            if (gameOver != true)
+            {
+                // Find the lowest empty cell in column 1
+                for (int i = 5; i >= 0; i--)
+                {
+                    // Check if the cell in row i is empty
+                    if (board.GetCell(i, 2).GetPlayer() == 0)
+                    {
+                        // Temporarily set the cell to the current player to visualize the ghost piece
+                        board.GetCell(i, 2).SetPlayer(curPlayer);
+
+                        // -- Code for changing the color of the button overlay goes here (For when we switch to buttons) --
+                        board.ChangeGhostPeice(i, 2);
+
+                        // Refresh the UI to display the ghost piece
+                        Refresh();
+
+                        // Restore the original state of the cell after visualization
+                        board.GetCell(i, 2).SetPlayer(0);
+
+                        break;
+                    }
+                }
+            }
+        }
+
+        private void Column3MouseLeave(object sender, EventArgs e)
+        {
+            for (int i = 5; i >= 0; i--)
+            {
+                // Check if the cell in row i is empty
+                if (board.GetCell(i, 2).GetPlayer() == 0)
+                {
+                    // Temporarily set the cell to the current player to visualize the ghost piece
+                    board.GetCell(i, 2).SetPlayer(curPlayer);
+
+                    // -- Code for changing the color of the button overlay goes here (For when we switch to buttons) --
+                    board.ChangeToDefaultColor(i, 2);
+
+                    // Refresh the UI to display the ghost piece
+                    Refresh();
+
+                    // Restore the original state of the cell after visualization
+                    board.GetCell(i, 2).SetPlayer(0);
+
+                    break;
+                }
+            }
+
+        }
+
+        private void Column4MouseHover(object sender, EventArgs e)
+        {
+            if (gameOver != true)
+            {
+                // Find the lowest empty cell in column 1
+                for (int i = 5; i >= 0; i--)
+                {
+                    // Check if the cell in row i is empty
+                    if (board.GetCell(i, 3).GetPlayer() == 0)
+                    {
+                        // Temporarily set the cell to the current player to visualize the ghost piece
+                        board.GetCell(i, 3).SetPlayer(curPlayer);
+
+                        // -- Code for changing the color of the button overlay goes here (For when we switch to buttons) --
+                        board.ChangeGhostPeice(i, 3);
+
+                        // Refresh the UI to display the ghost piece
+                        Refresh();
+
+                        // Restore the original state of the cell after visualization
+                        board.GetCell(i, 3).SetPlayer(0);
+
+                        break;
+                    }
+                }
+            }
+        }
+
+        private void Column4MouseLeave(object sender, EventArgs e)
+        {
+            for (int i = 5; i >= 0; i--)
+            {
+                // Check if the cell in row i is empty
+                if (board.GetCell(i, 3).GetPlayer() == 0)
+                {
+                    // Temporarily set the cell to the current player to visualize the ghost piece
+                    board.GetCell(i, 3).SetPlayer(curPlayer);
+
+                    // -- Code for changing the color of the button overlay goes here (For when we switch to buttons) --
+                    board.ChangeToDefaultColor(i, 3);
+
+                    // Refresh the UI to display the ghost piece
+                    Refresh();
+
+                    // Restore the original state of the cell after visualization
+                    board.GetCell(i, 3).SetPlayer(0);
+
+                    break;
+                }
+            }
+
+        }
+
+        private void Column5MouseHover(object sender, EventArgs e)
+        {
+            if (gameOver != true)
+            {
+                // Find the lowest empty cell in column 1
+                for (int i = 5; i >= 0; i--)
+                {
+                    // Check if the cell in row i is empty
+                    if (board.GetCell(i, 4).GetPlayer() == 0)
+                    {
+                        // Temporarily set the cell to the current player to visualize the ghost piece
+                        board.GetCell(i, 4).SetPlayer(curPlayer);
+
+                        // -- Code for changing the color of the button overlay goes here (For when we switch to buttons) --
+                        board.ChangeGhostPeice(i, 4);
+
+                        // Refresh the UI to display the ghost piece
+                        Refresh();
+
+                        // Restore the original state of the cell after visualization
+                        board.GetCell(i, 4).SetPlayer(0);
+
+                        break;
+                    }
+                }
+            }
+        }
+
+        private void Column5MouseLeave(object sender, EventArgs e)
+        {
+            for (int i = 5; i >= 0; i--)
+            {
+                // Check if the cell in row i is empty
+                if (board.GetCell(i, 4).GetPlayer() == 0)
+                {
+                    // Temporarily set the cell to the current player to visualize the ghost piece
+                    board.GetCell(i, 4).SetPlayer(curPlayer);
+
+                    // -- Code for changing the color of the button overlay goes here (For when we switch to buttons) --
+                    board.ChangeToDefaultColor(i, 4);
+
+                    // Refresh the UI to display the ghost piece
+                    Refresh();
+
+                    // Restore the original state of the cell after visualization
+                    board.GetCell(i, 4).SetPlayer(0);
+
+                    break;
+                }
+            }
+
+        }
+
+        private void Column6MouseHover(object sender, EventArgs e)
+        {
+            if (gameOver != true)
+            {
+                // Find the lowest empty cell in column 1
+                for (int i = 5; i >= 0; i--)
+                {
+                    // Check if the cell in row i is empty
+                    if (board.GetCell(i, 5).GetPlayer() == 0)
+                    {
+                        // Temporarily set the cell to the current player to visualize the ghost piece
+                        board.GetCell(i, 5).SetPlayer(curPlayer);
+
+                        // -- Code for changing the color of the button overlay goes here (For when we switch to buttons) --
+                        board.ChangeGhostPeice(i, 5);
+
+                        // Refresh the UI to display the ghost piece
+                        Refresh();
+
+                        // Restore the original state of the cell after visualization
+                        board.GetCell(i, 5).SetPlayer(0);
+
+                        break;
+                    }
+                }
+            }
+        }
+
+        private void Column6MouseLeave(object sender, EventArgs e)
+        {
+            for (int i = 5; i >= 0; i--)
+            {
+                // Check if the cell in row i is empty
+                if (board.GetCell(i, 5).GetPlayer() == 0)
+                {
+                    // Temporarily set the cell to the current player to visualize the ghost piece
+                    board.GetCell(i, 5).SetPlayer(curPlayer);
+
+                    // -- Code for changing the color of the button overlay goes here (For when we switch to buttons) --
+                    board.ChangeToDefaultColor(i, 5);
+
+                    // Refresh the UI to display the ghost piece
+                    Refresh();
+
+                    // Restore the original state of the cell after visualization
+                    board.GetCell(i, 5).SetPlayer(0);
+
+                    break;
+                }
+            }
+
+        }
+
+        private void Column7MouseHover(object sender, EventArgs e)
+        {
+            if (gameOver != true)
+            {
+                // Find the lowest empty cell in column 1
+                for (int i = 5; i >= 0; i--)
+                {
+                    // Check if the cell in row i is empty
+                    if (board.GetCell(i, 6).GetPlayer() == 0)
+                    {
+                        // Temporarily set the cell to the current player to visualize the ghost piece
+                        board.GetCell(i, 6).SetPlayer(curPlayer);
+
+                        // -- Code for changing the color of the button overlay goes here (For when we switch to buttons) --
+                        board.ChangeGhostPeice(i, 6);
+
+                        // Refresh the UI to display the ghost piece
+                        Refresh();
+
+                        // Restore the original state of the cell after visualization
+                        board.GetCell(i, 6).SetPlayer(0);
+
+                        break;
+                    }
+                }
+            }
+        }
+
+        private void Column7MouseLeave(object sender, EventArgs e)
+        {
+            for (int i = 5; i >= 0; i--)
+            {
+                // Check if the cell in row i is empty
+                if (board.GetCell(i, 6).GetPlayer() == 0)
+                {
+                    // Temporarily set the cell to the current player to visualize the ghost piece
+                    board.GetCell(i, 6).SetPlayer(curPlayer);
+
+                    // -- Code for changing the color of the button overlay goes here (For when we switch to buttons) --
+                    board.ChangeToDefaultColor(i, 6);
+
+                    // Refresh the UI to display the ghost piece
+                    Refresh();
+
+                    // Restore the original state of the cell after visualization
+                    board.GetCell(i, 6).SetPlayer(0);
+
+                    break;
+                }
+            }
+
+        }
+
         //Testing for making transparent
         //private void column1_Click(object sender, EventArgs e)
         //{
@@ -260,6 +669,6 @@ namespace CIS153_ConnectFour_Group7
         //    BluePen.Width = 25;
         //    e.Graphics.DrawEllipse(Pens.Blue, 400, 150, 400, 400);
         //}
-        
+
     }
 }

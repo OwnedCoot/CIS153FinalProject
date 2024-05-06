@@ -209,5 +209,30 @@ namespace CIS153_ConnectFour_Group7
             }
         }
 
+        public void ChangeGhostPeice(int r, int c)
+        {
+            // Check which player is in the cell and change the color accordingly
+            if (board[r, c].GetPlayer() == 1)
+            {
+                textBoxes[r, c].BackColor = Color.LightSalmon;
+            }
+
+            else if (board[r, c].GetPlayer() == 2)
+            {
+                textBoxes[r, c].BackColor = Color.Khaki;
+            }
+
+            // If the cell is not empty, but the player is not 1 or 2, then there is an error
+            else
+            {
+                Console.WriteLine("ERROR IN GHOST COLOR CHANGE");
+            }
+        }
+
+        public void ChangeToDefaultColor(int r, int c)
+        {
+            textBoxes[r, c].BackColor = Color.White;
+        }
+
     }
 }
