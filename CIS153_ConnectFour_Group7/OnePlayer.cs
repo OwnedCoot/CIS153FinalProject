@@ -40,6 +40,9 @@ namespace CIS153_ConnectFour_Group7
             InitializeComponent();
             //this passes the parent form to this form so we can get back to it.
             pform = pf;
+            InitializeTextBoxes();
+            // Create the game board
+            board = new Board(onePlayerTBA);
         }
 
         //==========BUTTON CLICKS==========
