@@ -19,6 +19,8 @@ namespace CIS153_ConnectFour_Group7
 
         private Board board;
 
+        private Computer ai = new Computer();
+
         private bool gameOver = false;
 
         // Current player
@@ -149,6 +151,66 @@ namespace CIS153_ConnectFour_Group7
                     column5.Enabled = false;
                     column6.Enabled = false;
                 }
+                if (gameOver != true)
+                {
+                    ai.MakeMove(board, moves);
+                }
+
+                // Run the move checks after a move is made
+                moveSuccess = moveChecks();
+
+                // If the move was successful, run post-move operations
+                if (moveSuccess)
+                {
+                    // If no win or draw, switch players and continue the game
+                    curPlayer = GameUtilities.ChangePlayer(curPlayer);
+
+                    // Update the current player label
+                    lbl_CurrentPlayer.Text = "Player " + curPlayer + "'s turn";
+
+                    // Change the color of the current player label depending on the player
+                    if (curPlayer == 1)
+                    {
+                        // Player 1 (Red)
+                        lbl_CurrentPlayer.ForeColor = Color.Firebrick;
+                    }
+                    else
+                    {
+                        // Player 2 (Yellow)
+                        lbl_CurrentPlayer.ForeColor = Color.Goldenrod;
+                    }
+                }
+
+                // If the move was not successful, end the game
+                else
+                {
+                    // Check if a player won
+                    if (board.CheckWin(curPlayer))
+                    {
+                        // Temp: Update the current player label to show the winning player
+                        lbl_CurrentPlayer.Text = "Player " + curPlayer + " wins!";
+                        gameOver = true;
+                    }
+
+                    // Check if the it was a draw
+                    else if (board.IsFull())
+                    {
+                        // Temp: Update the current player label to show that it was a draw
+                        lbl_CurrentPlayer.Text = "It's a draw!";
+                        gameOver = true;
+                    }
+
+                    // Disable all column buttons
+                    column0.Enabled = false;
+                    column1.Enabled = false;
+                    column2.Enabled = false;
+                    column3.Enabled = false;
+                    column4.Enabled = false;
+                    column5.Enabled = false;
+                    column6.Enabled = false;
+                }
+
+                //curPlayer = GameUtilities.ChangePlayer(curPlayer);
             }
         }
 
